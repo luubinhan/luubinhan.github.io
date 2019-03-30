@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-serif-theme",
+  "name": "luubinhan-landing-page",
   "version": "1.0.0",
-  "author": "Robert Austin <rob@jugglerdigital.com>",
+  "author": "Luu Binh An <luubinhan1989@gmail.com>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
