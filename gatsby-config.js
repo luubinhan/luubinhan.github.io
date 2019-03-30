@@ -2,27 +2,25 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Serif',
-    description: 'my theme',
+    title: 'luubinhan.github.io',
+    description: 'Trang web cá nhân | Luu Binh An',
     contact: {
-      phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      phone: '',
+      skype: 'luu.binh.an',
+      zalo: 'luubinhan',
+      email: 'luubinhan1989@gmail.com',
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
+        name: 'Dự Án',
+        link: '/portfolio',
       },
       {
-        name: 'Team',
-        link: '/team',
+        name: 'Blog',
+        link: 'https://luubinhan.github.io/blog/',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
-      },
-      {
-        name: 'Contact',
+        name: 'Liên hệ',
         link: '/contact',
       },
     ],
@@ -56,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: guid ? guid : 'UA-XXX-1',
+        trackingId: guid || 'UA-XXX-1',
         // Puts tracking script in the head instead of the body
         head: false,
       },
