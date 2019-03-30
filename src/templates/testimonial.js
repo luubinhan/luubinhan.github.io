@@ -4,8 +4,8 @@ import Layout from '../layouts/index';
 
 const Testimonial = ({ data }) => {
   const { markdownRemark } = data;
-  const title = markdownRemark.frontmatter.title;
-  const html = markdownRemark.html;
+  const {title} = markdownRemark.frontmatter;
+  const {html} = markdownRemark;
   return (
     <Layout bodyClass="page-testimonial">
       <div className="strip strip-white strip-diagonal">
