@@ -6,6 +6,9 @@
   "scripts": {
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build:pp": "gatsby build --prefix-paths",
+    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+    "clean": "rm -rf public",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
@@ -27,10 +30,11 @@
     "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
     "prettier-eslint": "^8.8.2"
   }
 }
