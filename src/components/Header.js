@@ -14,7 +14,7 @@ class Header extends React.Component {
     };
   }
 
-  toggleMenu = menuActive => {
+  toggleMenu = (menuActive) => {
     this.setState(prevState => ({
       menuActive: !prevState.menuActive,
     }));
