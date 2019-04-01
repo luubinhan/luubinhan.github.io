@@ -4,14 +4,21 @@
     display: block;
     width: 120px;
   }
-  img {
-    width: 100%;
-    height: auto;
+  .brand-name {
+    padding-left: 10px;
+    font-weight: 900;
+    color: #38adba;
+    span {
+      color: #ccdf2b;
+    }
   }
   a {
     display: block;
     width: 100%;
     height: 100%;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

@@ -12,16 +12,16 @@ module.exports = {
     },
     menuLinks: [
       {
-        name: 'Dự Án',
+        name: 'Work',
         link: '/portfolio',
+      },
+      {
+        name: 'Me',
+        link: '/contact',
       },
       {
         name: 'Blog',
         link: 'https://luubinhan.github.io/blog/',
-      },
-      {
-        name: 'Liên hệ',
-        link: '/contact',
       },
     ],
   },

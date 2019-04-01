@@ -11,11 +11,15 @@ const Footer = props => (
             <ul className="footer-menu">
               <li>
                 {' '}
-                <Link to="/">Home</Link>
+                <Link to="/">Work</Link>
               </li>
               <li>
                 {' '}
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Me</Link>
+              </li>
+              <li>
+                {' '}
+                <Link to="/">Blog</Link>
               </li>
               <li className="copyright">
                 ©

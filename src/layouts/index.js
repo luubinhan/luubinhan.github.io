@@ -20,7 +20,6 @@ const Layout = ({
         {children}
       </div>
       <Footer />
-      <SubFooter />
     </div>
   </React.Fragment>
 );

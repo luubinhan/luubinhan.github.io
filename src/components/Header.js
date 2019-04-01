@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
-import logo from '../images/logo.svg';
 import logoMobile from '../images/logo-mobile.svg';
 import MenuMobile from './MenuMobile';
 
@@ -26,12 +25,16 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logo} />
+              <img height="30" alt="Luckyluu Homepage" src={logoMobile} />
+              <span className="brand-name">
+                lucky
+                <span>luu</span>
+              </span>
             </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logoMobile} />
+              <img height="30" alt="Luckyluu Homepage" src={logoMobile} />
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
