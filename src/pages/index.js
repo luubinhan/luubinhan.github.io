@@ -117,27 +117,44 @@ const Home = (props) => {
             <StyledBoxTitle>What other people think of me</StyledBoxTitle>
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-6 col-md-6">
+                <div className="col-12 col-sm-7 col-md-7">
                   <div className="testimonial">
-                    <div className="testimonials-meta">
-                      <p className="testimonials-name">Trần Thảo Khánh</p>
-                      <p className="testimonials-jobtitle">Designer</p>
-                    </div>
                     <div
                       className="testimonials-content"
                     >
-                    Feel like he spread the positive energy to people around
+                      <blockquote>
+                      Feel like he spread the positive energy to people around
+                      </blockquote>
+                    </div>
+                    <div className="testimonials-meta">
+                      <p className="testimonials-name">Tran Thao Khanh</p>
+                      <p className="testimonials-jobtitle">Designer</p>
                     </div>
                   </div>
                   <div className="testimonial">
-                    <div className="testimonials-meta">
-                      <p className="testimonials-name">Ngô Tú Quỳnh</p>
-                      <p className="testimonials-jobtitle">HR</p>
-                    </div>
                     <div
                       className="testimonials-content"
                     >
-                    You're one of the best coworkers we have ever worked with
+                      <blockquote>
+                        You're one of the best coworkers we have ever worked with
+                      </blockquote>
+                    </div>
+                    <div className="testimonials-meta">
+                      <p className="testimonials-name">Ngo Tu Quynh</p>
+                      <p className="testimonials-jobtitle">HR</p>
+                    </div>
+                  </div>
+                  <div className="testimonial">
+                    <div
+                      className="testimonials-content"
+                    >
+                      <blockquote>
+                      You are the inspirer
+                      </blockquote>
+                    </div>
+                    <div className="testimonials-meta">
+                      <p className="testimonials-name">Tran Huy Minh</p>
+                      <p className="testimonials-jobtitle">Developer</p>
                     </div>
                   </div>
                 </div>

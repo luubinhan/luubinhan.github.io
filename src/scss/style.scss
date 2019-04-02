@@ -97,3 +97,24 @@ body {
   color: #fafafa;
 }
 img {max-width: 100%;}
+
+html {
+  &::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #191b27;
+    
+  }
+  &::-webkit-scrollbar-corner {
+    background: #191b27;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear,left top,left bottom,from(#38adba),to(#ccdf2b));
+    background: linear-gradient(to bottom,#38adba,#ccdf2b);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  }
+}

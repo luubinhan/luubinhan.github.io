@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 70px;
   .testimonials-image {
     flex: 0;
     margin-right: 10px;
@@ -33,15 +34,15 @@
   }
   .testimonials-content {
     flex: 1 0 100%;
-
     blockquote {
       display: block;
-      border-width: 2px 0 0 0;
-      border-style: solid;
-      border-color: #eee;
-      padding: 1.5em 0 0.5em;
+      padding: 1.5em;
       margin: 1.5em 0;
       position: relative;
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 300;
+      background: #fff;
     }
     blockquote:before {
       content: '\201C';
@@ -49,11 +50,10 @@
       top: 0em;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: #fff;
       width: 3rem;
       height: 2rem;
       font: 6em/1.08em 'PT Sans', sans-serif;
-      color: $primary;
+      color: #8d98a2;
       text-align: center;
     }
     // blockquote:after {
