@@ -5,21 +5,21 @@ const Call = props => (
   <div className="call">
     <div className="call-box-top">
       {props.data.site.siteMetadata.contact.phone && (
-        <div className="call-phone">
-          <strong>Phone: </strong>
-          {props.data.site.siteMetadata.contact.phone}
+        <div className="call-box">
+          <span className="label">Phone: </span>
+          <span>{props.data.site.siteMetadata.contact.phone}</span>
         </div>
       )}
-      <div className="call-phone">
-        <strong>Skype: </strong>
+      <div className="call-box">
+        <span className="label">Skype: </span>
         <a href="skype:luu.binh.an?chat">luu.binh.an</a>
       </div>
-      <div className="call-phone">
-        <strong>Zalo: </strong>
-        luubinhan
+      <div className="call-box">
+        <span className="label">Zalo: </span>
+        <span>luubinhan</span>
       </div>
-      <div className="call-email">
-        <strong>Email: </strong>
+      <div className="call-box">
+        <span className="label">Email: </span>
         <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
           {props.data.site.siteMetadata.contact.email}
         </a>

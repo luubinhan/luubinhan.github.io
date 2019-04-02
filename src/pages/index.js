@@ -24,7 +24,7 @@ const Home = (props) => {
       <Section>
         <div className="intro pb-4">
           <div className="container">
-            <h1>A coder, a designer, a photographer, and a <i className="text-primary">music lover</i></h1>
+            <h1>A coder, a designer, a photographer, and a <i className="text-primary">moviegoer</i></h1>
             <p>
               I moved to the largest city in Vietnam, formerly named saigon in 2007 and became a web tailor since 2011
             </p>
