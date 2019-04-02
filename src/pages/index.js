@@ -98,12 +98,15 @@ const Home = (props) => {
       <SectionTop>
         <div className="intro pb-4">
           <div className="container">
-            <h1>A coder, a designer, a photographer, and a <i className="text-primary">moviegoer</i></h1>
+            <h1>A coder, a designer, a photographer, and a <i className="text-primary">movie goer</i></h1>
             <p>
-              I moved to the largest city in Vietnam, formerly named saigon in 2007 and became a web tailor since 2011
+              I moved to the largest city in Vietnam, formerly named Saigon in 2007 and became a web tailor since 2011
             </p>
             <p>
-              Working on tons of projects, I believe that what makes a great website is fascinating message, together with an immediate understanding, original content and easily traceable information.
+            I currently work for Infinito Blockchains Labs, as a Frontend Developer.
+            </p>
+            <p>
+              Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information.
             </p>
           </div>
         </div>
