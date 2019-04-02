@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, withPrefix, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
@@ -9,9 +9,83 @@ import Call from '../components/Call';
 const Section = styled.div`  
 `;
 
+const SectionTop = styled.div`
+  padding-bottom: 100px;
+`;
+
+const SectionHeaderWork = styled.div`
+  text-align: center;
+  border-bottom: 1px solid #393b48;
+  border-top: 1px solid #393b48;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+`;
+
+const SectionTestimonyInner = styled.div`
+  background: #fbfaf9;
+  color: #686868;
+  padding-top: 100px;
+  padding-bottom: 100px;
+`;
+
+const SectionTestimony = styled.div`
+  background: #202230;
+  padding-right: 150px;
+  position: relative;
+  min-height: 100vh;
+  &:after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #38adba;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: #ccdf2b;
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+  }
+`;
+
+const StyledBoxTitle = styled.div`
+  position: absolute;
+  right: -10%;
+  top: 0;
+  width: 40%;
+  padding: 100px;
+  font-weight: 900;
+  background: #e9f5f5;
+  color: #202230;
+  font-size: 5rem;
+  text-align: left;
+  line-height: 1;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10%;
+    border: 1px solid #fff;
+    right: 10%;
+    bottom: 10%;
+    top: 10%;
+  }
+`;
+
 const Home = (props) => {
-  const markdown = props.data.allMarkdownRemark.edges;
-  const json = props.data.allFeaturesJson.edges;
+  // const markdown = props.data.allMarkdownRemark.edges;
+  // const json = props.data.allFeaturesJson.edges;
   return (
     <Layout bodyClass="page-home">
       <SEO title="Home" />
@@ -21,7 +95,7 @@ const Home = (props) => {
           content="coder, designer, photographer, website, wordpress, frontend"
         />
       </Helmet>
-      <Section>
+      <SectionTop>
         <div className="intro pb-4">
           <div className="container">
             <h1>A coder, a designer, a photographer, and a <i className="text-primary">moviegoer</i></h1>
@@ -36,58 +110,48 @@ const Home = (props) => {
         <div className="container pt-2">
           <Call />
         </div>
-      </Section>
+      </SectionTop>
+      <SectionTestimony>
+        <SectionTestimonyInner>
+          <div className="container" style={{ position: 'relative' }}>
+            <StyledBoxTitle>What other people think of me</StyledBoxTitle>
+            <div className="container">
+              <div className="row">
+                <div className="col-12 col-sm-6 col-md-6">
+                  <div className="testimonial">
+                    <div className="testimonials-meta">
+                      <p className="testimonials-name">Trần Thảo Khánh</p>
+                      <p className="testimonials-jobtitle">Designer</p>
+                    </div>
+                    <div
+                      className="testimonials-content"
+                    >
+                    Feel like he spread the positive energy to people around
+                    </div>
+                  </div>
+                  <div className="testimonial">
+                    <div className="testimonials-meta">
+                      <p className="testimonials-name">Ngô Tú Quỳnh</p>
+                      <p className="testimonials-jobtitle">HR</p>
+                    </div>
+                    <div
+                      className="testimonials-content"
+                    >
+                    You're one of the best coworkers we have ever worked with
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SectionTestimonyInner>
+      </SectionTestimony>
       <Section>
-        <div className="intro">
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                <h1>What other people think of me</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container pb-6">
-          <div className="row">
-            <div className="col-12 col-md-6 mb-1">
-              <div className="testimonial">
-                <div className="testimonials-meta">
-                  <p className="testimonials-name">Trần Thảo Khánh</p>
-                  <p className="testimonials-jobtitle">Designer</p>
-                </div>
-                <div
-                  className="testimonials-content"
-                >
-                Feel like he spread the positive energy to people around
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 mb-1">
-              <div className="testimonial">
-                <div className="testimonials-meta">
-                  <p className="testimonials-name">Ngô Tú Quỳnh</p>
-                  <p className="testimonials-jobtitle">HR</p>
-                </div>
-                <div
-                  className="testimonials-content"
-                >
-                You're one of the best coworkers we have ever worked with
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-      <Section>
-        <div className="intro">
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                <h1>Work</h1>
-                Not perfect, but work
-              </div>
-            </div>
-          </div>
+        <div className="container">
+          <SectionHeaderWork>
+            <h1>Work</h1>
+            Not perfect, but work
+          </SectionHeaderWork>
         </div>
         <div className="container pb-6">
           <div className="row">
