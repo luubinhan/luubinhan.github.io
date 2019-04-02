@@ -12,11 +12,11 @@ const Call = props => (
       )}
       <div className="call-phone">
         <strong>Skype: </strong>
-        {props.data.site.siteMetadata.contact.skype}
+        <a href="skype:luu.binh.an?chat">luu.binh.an</a>
       </div>
       <div className="call-phone">
         <strong>Zalo: </strong>
-        {props.data.site.siteMetadata.contact.zalo}
+        luubinhan
       </div>
       <div className="call-email">
         <strong>Email: </strong>

@@ -1,5 +1,6 @@
+
 // Font
-@import url('https://fonts.googleapis.com/css?family=Lora:400|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900');
 
 // Bootstrap
 @import 'bootstrap/functions';
@@ -91,3 +92,8 @@
 //     }
 //   }
 // }
+body {
+  background: #202230;
+  color: #fafafa;
+}
+img {max-width: 100%;}

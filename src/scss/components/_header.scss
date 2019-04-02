@@ -1,11 +1,9 @@
 .header {
-  height: 50px;
-  color: $primary;
-  background-color: #ffffff;
+  height: 120px;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
   .container {
     display: flex;
     justify-content: space-between;

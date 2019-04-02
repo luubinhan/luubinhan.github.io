@@ -24,15 +24,12 @@
         height: inherit;
         display: inline-block;
         padding: 0;
-        font-size: 0.9rem;
         font-weight: 400;
-        text-transform: uppercase;
         color: inherit;
         padding: 10px 14px 10px 14px;
         text-decoration: none;
         &:hover {
-          background: $primary;
-          color: #fff;
+          color: $primary;
           text-decoration: none;
         }
       }
