@@ -435,18 +435,7 @@ class Home extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="media">
-                  <div className="media-body">
-                    <h5>
-                      <a href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi" target="_blank" rel="noopener noreferrer">
-                        FrontEnd Developer 2016 thì nên học cái gì?
-                      </a>
-                    </h5>
-                    <p>
-                      Hey mình có dự án mới về web, không code web lâu quá rồi, không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ là frontend developer, nhưng bạn đã tìm đúng người rồi đó, mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học gì để tạo web apps
-                    </p>
-                  </div>
-                </div>
+                
                 <div className="media">
                   <div className="media-body">
                     <h5>
@@ -469,6 +458,18 @@ class Home extends React.Component {
                     </h5>
                     <p>
                       Tìm hiểu vòng đời của một Component React, khi nào và sử dụng ra sao
+                    </p>
+                  </div>
+                </div>
+                <div className="media">
+                  <div className="media-body">
+                    <h5>
+                      <a href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi" target="_blank" rel="noopener noreferrer">
+                        FrontEnd Developer 2016 thì nên học cái gì?
+                      </a>
+                    </h5>
+                    <p>
+                      Hey mình có dự án mới về web, không code web lâu quá rồi, không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ là frontend developer, nhưng bạn đã tìm đúng người rồi đó, mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học gì để tạo web apps
                     </p>
                   </div>
                 </div>
