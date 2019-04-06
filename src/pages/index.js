@@ -419,7 +419,7 @@ class Home extends React.Component {
             <BlogInner>
               <h2 className="display-4" style={{ color: '#111' }}>Blog</h2>
               <p className="lead">
-                Since 2017, my hoppie at weekend
+                Since 2017, after 3 years spending time with WordPress, I feel out of date with new web technologies, to help myself and others who have difficulty learning modern web development trend, I start to write a blog, hopefully, it can bring knowledge to Vietnam student who has trouble looking for the resource in Vietnamese. And now it becomes a hobby for every weekend
               </p>
               <div className="container">
                 <div className="media">
@@ -427,7 +427,6 @@ class Home extends React.Component {
                     <h5>
                       <a href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te" target="_blank" rel="noopener noreferrer">
                         Thiết kế tuyệt đẹp vs. Thực tế: bài học từ Facebook
-                        
                       </a>
                     </h5>
                     <p>
@@ -435,13 +434,11 @@ class Home extends React.Component {
                     </p>
                   </div>
                 </div>
-                
                 <div className="media">
                   <div className="media-body">
                     <h5>
                       <a href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/" target="_blank" rel="noopener noreferrer">
                         Wordpress vs Static site
-                        
                       </a>
                     </h5>
                     <p>
