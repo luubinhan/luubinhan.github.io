@@ -2,12 +2,13 @@
   display: none;
   @include media-breakpoint-up(sm) {
     display: block;
-    width: 180px;
+    width: 200px;
   }
   .brand-name {
     padding-left: 10px;
     font-weight: 900;
     color: #38adba;
+    font-size: 1.3em;
     span {
       color: #ccdf2b;
     }

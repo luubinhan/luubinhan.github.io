@@ -1,0 +1,97 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-pages-contact-index-js",
+        "jsonName": "contact-26a",
+        "path": "/contact/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-services-index-js",
+        "jsonName": "services-522",
+        "path": "/services/"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-accounting-d24",
+        "path": "/services/accounting"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-business-advisory-6da",
+        "path": "/services/business-advisory"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-business-sales-3fd",
+        "path": "/services/business-sales"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-mergers-1b1",
+        "path": "/services/mergers"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-superannuation-563",
+        "path": "/services/superannuation"
+    },
+    {
+        "componentChunkName": "component---src-templates-service-js",
+        "jsonName": "services-tax-preperation-794",
+        "path": "/services/tax-preperation"
+    },
+    {
+        "componentChunkName": "component---src-pages-team-index-js",
+        "jsonName": "team-a07",
+        "path": "/team/"
+    },
+    {
+        "componentChunkName": "component---src-templates-team-js",
+        "jsonName": "team-peter-van-eijk-e36",
+        "path": "/team/peter-van-eijk"
+    },
+    {
+        "componentChunkName": "component---src-templates-team-js",
+        "jsonName": "team-sage-kirk-a65",
+        "path": "/team/sage-kirk"
+    },
+    {
+        "componentChunkName": "component---src-pages-testimonials-index-js",
+        "jsonName": "testimonials-534",
+        "path": "/testimonials/"
+    },
+    {
+        "componentChunkName": "component---src-templates-testimonial-js",
+        "jsonName": "testimonials-lion-creative-99e",
+        "path": "/testimonials/lion-creative"
+    },
+    {
+        "componentChunkName": "component---src-templates-testimonial-js",
+        "jsonName": "testimonials-mikes-auto-parts-79e",
+        "path": "/testimonials/mikes-auto-parts"
+    },
+    {
+        "componentChunkName": "component---src-templates-testimonial-js",
+        "jsonName": "testimonials-thaistyle-asian-d25",
+        "path": "/testimonials/thaistyle-asian"
+    }
+]

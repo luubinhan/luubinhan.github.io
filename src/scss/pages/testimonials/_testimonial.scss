@@ -1,9 +1,26 @@
+div .testimonial:nth-child(2n + 1) {
+  -moz-transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  -o-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+} 
+
 .testimonial {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
+  &.transform {
+    .testimonials-content {
+      -moz-transform: translateX(50px);
+      -webkit-transform: translateX(50px);
+      -o-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  }
   .testimonials-image {
     flex: 0;
     margin-right: 10px;
@@ -14,10 +31,9 @@
   .testimonials-meta {
     flex: 1;
     margin-bottom: 10px;
+    text-align: right;
     p {
       margin-bottom: 0;
-    }
-    a {
     }
   }
   .testimonials-title {
@@ -30,7 +46,6 @@
   }
   .testimonials-jobtitle {
     display: inline-block;
-    color: $secondary;
   }
   .testimonials-content {
     flex: 1 0 100%;
@@ -48,11 +63,11 @@
       content: '\201C';
       position: absolute;
       top: 0em;
-      left: 50%;
+      left: 0%;
       transform: translate(-50%, -50%);
       width: 3rem;
       height: 2rem;
-      font: 6em/1.08em 'PT Sans', sans-serif;
+      font: 3em/1.08em 'PT Sans', sans-serif;
       color: #8d98a2;
       text-align: center;
     }

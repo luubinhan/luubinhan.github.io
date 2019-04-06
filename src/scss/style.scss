@@ -97,7 +97,27 @@ body {
   color: #fafafa;
 }
 img {max-width: 100%;}
-
+a {
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+a:not([href]):not([tabindex]) {
+  &:hover {
+    color: $primary;
+  }
+}
+::selection {
+  background: $primary;
+  /* Safari */
+  color: #fff;
+}
+::-moz-selection {
+  background: $primary;
+  /* Firefox */
+  color: #fff;
+}
 html {
   &::-webkit-scrollbar {
     width: 20px;
