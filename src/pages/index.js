@@ -17,27 +17,89 @@ const {
   scrollSpy,
 } = Scroll;
 
-const SectionBlog = styled.div`  
+const SectionBlog = styled.div`
+  margin-top: 3rem;
+  position: relative;
+  background: linear-gradient(to left, rgb(251, 250, 249) 75%, transparent 75%);
+  padding: 8rem 0px; 
+  -webkit-box-align: center;
+  align-items: center;
+  display: grid;
+  color: #313131;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  &:after {
+    bottom: 1rem;
+    content: "";
+    height: 3rem;
+    left: 1rem;
+    position: absolute;
+    width: 3rem;
+    background: #38adba;
+    display: block;
+  }
+  &:before {
+    content: "";
+    display: block;
+    height: 5rem;
+    right: 1rem;
+    position: absolute;
+    width: 5rem;
+    top: -3rem;
+    background: #ccdf2b;
+  }
+  .lead {
+    color: rgba(0,0,0,.8);
+  }
 `;
 
-const SectionWork = styled.div`  
+const BlogInner = styled.div`
+  grid-row: 1 / auto;
+  grid-column: 7 / span 8;
+`;
+
+const SectionWork = styled.div`
+  position: relative;
+  &:after {
+    content: "";
+    height: 28rem;
+    left: 6.25vw;
+    position: absolute;
+    top: 16rem;
+    width: 18.75vw;
+    display: block;
+    background: url("/dot.svg") center top / contain repeat-y;
+  }
+  &:before {
+    content: "";
+    height: 16rem;
+    left: 14.275vw;
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    background: rgb(136, 136, 136);
+  }
+`;
+
+const Circle = styled.div`
+  content: "";
+  height: 9.375vw;
+  left: 9.6vw;
+  position: absolute;
+  top: calc(16rem - 2vw);
+  width: 9.375vw;
+  background: url("/circle.svg") center top / contain no-repeat rgb(32, 34, 48);
+`;
+
+const SectionHeaderWork = styled.div`
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
 `;
 
 const SectionTop = styled.div`
   padding-bottom: 100px;
 `;
 
-const SectionHeaderWork = styled.div`
-  text-align: center;
-  border-bottom: 1px solid #393b48;
-  border-top: 1px solid #393b48;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-`;
 
 const SectionTestimonyInner = styled.div`
   background: #fbfaf9;
@@ -303,11 +365,18 @@ class Home extends React.Component {
         </Element>
         <Element name="workSection">
           <SectionWork>
+            <Circle />
             <div className="container">
-              <SectionHeaderWork>
-                <h1>Work</h1>
-                Not perfect, but work
-              </SectionHeaderWork>
+              <div className="row">
+                <div className="col-8 col-sm-6 col-md-6 offset-sm-4 offset-md-4">
+                  <SectionHeaderWork>
+                    <h2 className="display-3">Work</h2>
+                    <p className="lead">
+                      Not perfect, but work
+                    </p>
+                  </SectionHeaderWork>
+                </div>
+              </div>
             </div>
             <div className="container pb-6">
               <div className="row">
@@ -347,46 +416,69 @@ class Home extends React.Component {
         </Element>
         <Element name="blogSection">
           <SectionBlog>
-            Blog
-            <div className="container">
-              <div>
-                <a className="btn btn-primary btn-lg" href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te" target="_blank" rel="noopener noreferrer">
-                  Thiết kế tuyệt đẹp vs. Thực tế: bài học từ Facebook
-                  <span>
-                    Bài viết dịch lại của một anh làm product design cho facebook đăng tải trên medium
-                  </span>
+            <BlogInner>
+              <h2 className="display-4" style={{ color: '#111' }}>Blog</h2>
+              <p className="lead">
+                Since 2017, my hoppie at weekend
+              </p>
+              <div className="container">
+                <div className="media">
+                  <div className="media-body">
+                    <h5>
+                      <a href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te" target="_blank" rel="noopener noreferrer">
+                        Thiết kế tuyệt đẹp vs. Thực tế: bài học từ Facebook
+                        
+                      </a>
+                    </h5>
+                    <p>
+                      Bài viết dịch lại của một anh làm product design cho facebook đăng tải trên medium
+                    </p>
+                  </div>
+                </div>
+                <div className="media">
+                  <div className="media-body">
+                    <h5>
+                      <a href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi" target="_blank" rel="noopener noreferrer">
+                        FrontEnd Developer 2016 thì nên học cái gì?
+                      </a>
+                    </h5>
+                    <p>
+                      Hey mình có dự án mới về web, không code web lâu quá rồi, không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ là frontend developer, nhưng bạn đã tìm đúng người rồi đó, mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học gì để tạo web apps
+                    </p>
+                  </div>
+                </div>
+                <div className="media">
+                  <div className="media-body">
+                    <h5>
+                      <a href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/" target="_blank" rel="noopener noreferrer">
+                        Wordpress vs Static site
+                        
+                      </a>
+                    </h5>
+                    <p>
+                      Chúng ta cùng nhau điểm qua cái hay, cái dở của từng thằng để nghiền ngẫm xem nó phù hợp trong trường hợp nào.
+                    </p>
+                  </div>
+                </div>
+                <div className="media">
+                  <div className="media-body">
+                    <h5>
+                      <a href="https://luubinhan.github.io/blog/2017-10-20-react-lifecycle-la-gi/" target="_blank" rel="noopener noreferrer">
+                        Giải thích React Component Lifecycle
+                      </a>
+                    </h5>
+                    <p>
+                      Tìm hiểu vòng đời của một Component React, khi nào và sử dụng ra sao
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center">
+                <a className="button btn-primary btn-lg" href="https://luubinhan.github.io/blog/" target="_blank" rel="noopener noreferrer">
+                  Click to see more
                 </a>
               </div>
-              <div>
-                <a className="btn btn-primary btn-lg" href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi" target="_blank" rel="noopener noreferrer">
-                  FrontEnd Developer 2016 thì nên học cái gì?
-                  <span>
-                    Hey mình có dự án mới về web, không code web lâu quá rồi, không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ là frontend developer, nhưng bạn đã tìm đúng người rồi đó, mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học gì để tạo web apps
-                  </span>
-                </a>
-              </div>
-              <div>
-                <a className="btn btn-primary btn-lg" href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/" target="_blank" rel="noopener noreferrer">
-                  Wordpress vs Static site
-                  <span>
-                    Chúng ta cùng nhau điểm qua cái hay, cái dở của từng thằng để nghiền ngẫm xem nó phù hợp trong trường hợp nào.
-                  </span>
-                </a>
-              </div>
-              <div>
-                <a className="btn btn-primary btn-lg" href="https://luubinhan.github.io/blog/2017-10-20-react-lifecycle-la-gi/" target="_blank" rel="noopener noreferrer">
-                  Giải thích React Component Lifecycle
-                  <span>
-                    Tìm hiểu vòng đời của một Component React, khi nào và sử dụng ra sao
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div className="text-center">
-              <a className="btn btn-primary btn-lg" href="https://luubinhan.github.io/blog/" target="_blank" rel="noopener noreferrer">
-                Click to see more
-              </a>
-            </div>
+            </BlogInner>
           </SectionBlog>
         </Element>
       </div>

@@ -1332,12 +1332,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-06T06:42:45.347Z",
+      "buildTime": "2019-04-06T09:00:00.642Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "d9a50d4581fb780f8caae8d4469f7fc1",
+        "contentDigest": "76c43a82e5824d412cd31280d3770401",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1600,7 +1600,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "0f69f1a4900951c589d00481355da025",
+        "contentDigest": "c70743962ca987689565274bcb657b29",
         "type": "File",
         "mediaType": "application/javascript",
         "description": "File \"src\\pages\\index.js\"",
@@ -1610,11 +1610,11 @@
       "absolutePath": "C:/xampp/htdocs/luubinhan.github.io-source/src/pages/index.js",
       "relativePath": "index.js",
       "extension": "js",
-      "size": 14317,
-      "prettySize": "14.3 kB",
-      "modifiedTime": "2019-04-06T07:10:01.190Z",
+      "size": 16657,
+      "prettySize": "16.7 kB",
+      "modifiedTime": "2019-04-06T10:32:42.837Z",
       "accessTime": "2019-04-02T14:26:44.997Z",
-      "changeTime": "2019-04-06T07:10:01.190Z",
+      "changeTime": "2019-04-06T10:32:42.837Z",
       "birthTime": "2019-03-30T03:27:07.487Z",
       "root": "C:/",
       "dir": "C:/xampp/htdocs/luubinhan.github.io-source/src/pages",
@@ -1630,12 +1630,12 @@
       "rdev": 0,
       "ino": 10696049115093738,
       "atimeMs": 1554215204997.2083,
-      "mtimeMs": 1554534601190.4944,
-      "ctimeMs": 1554534601190.4944,
+      "mtimeMs": 1554546762837.453,
+      "ctimeMs": 1554546762837.453,
       "birthtimeMs": 1553916427487.1833,
       "atime": "2019-04-02T14:26:44.997Z",
-      "mtime": "2019-04-06T07:10:01.190Z",
-      "ctime": "2019-04-06T07:10:01.190Z",
+      "mtime": "2019-04-06T10:32:42.837Z",
+      "ctime": "2019-04-06T10:32:42.837Z",
       "birthtime": "2019-03-30T03:27:07.487Z"
     },
     "9a3c8124-2132-5a09-9d20-0bb68114ae96": {
@@ -3400,8 +3400,8 @@
         "sq--src-components-footer-js",
         "sq--src-components-menu-js",
         "sq--src-components-menu-mobile-js",
-        "sq--src-components-sub-footer-js",
-        "sq--src-components-seo-js"
+        "sq--src-components-seo-js",
+        "sq--src-components-sub-footer-js"
       ],
       "991c1cee-8ccd-51c7-bdaa-dfd115852bec": [
         "/services/mergers"
