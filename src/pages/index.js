@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Scroll from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import SEO from '../components/SEO';
+import Footer from '../components/Footer';
+import SubFooter from '../components/SubFooter';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
@@ -98,6 +100,10 @@ const SectionHeaderWork = styled.div`
 
 const SectionTop = styled.div`
   padding-bottom: 100px;
+  background-image: url("/images/my-image.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50vw auto;
 `;
 
 
@@ -296,6 +302,8 @@ class Home extends React.Component {
                 <p>
                   Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information.
                 </p>
+                <img src="" alt=""/>
+                
               </div>
             </div>
             <div className="container pt-2">
@@ -368,7 +376,7 @@ class Home extends React.Component {
             <Circle />
             <div className="container">
               <div className="row">
-                <div className="col-8 col-sm-6 col-md-6 offset-sm-4 offset-md-4">
+                <div className="col-8 col-sm-6 col-md-6 offset-sm-4 offset-md-3">
                   <SectionHeaderWork>
                     <h2 className="display-3">Work</h2>
                     <p className="lead">
@@ -479,6 +487,7 @@ class Home extends React.Component {
             </BlogInner>
           </SectionBlog>
         </Element>
+        <Footer />
       </div>
     );
   }

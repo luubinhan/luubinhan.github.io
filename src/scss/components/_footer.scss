@@ -1,6 +1,6 @@
 .footer-strip {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer {
   display: flex;
@@ -27,8 +27,13 @@
     margin: 0;
     padding: 0;
     flex: 1;
+    svg {
+      width: 20px;
+      path {
+        fill: #999;
+      }
+    }
     li {
-      display: block;
       margin-right: 10px;
       font-size: 0.8rem;
       color: #ffffff;
