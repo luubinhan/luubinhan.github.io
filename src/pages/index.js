@@ -100,7 +100,7 @@ const SectionHeaderWork = styled.div`
 
 const SectionTop = styled.div`
   padding-bottom: 100px;
-  background-image: url("/images/my-image.jpg");
+  background-image: url("/images/avatar.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 50vw auto;
