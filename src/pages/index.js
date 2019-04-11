@@ -6,7 +6,6 @@ import Scroll from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer';
-import SubFooter from '../components/SubFooter';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
@@ -104,6 +103,22 @@ const SectionTop = styled.div`
   background-repeat: no-repeat;
   background-position: 50vw center;
   background-size: auto 60vh;
+`;
+
+const StyledWorkGroup = styled.div`
+  background-color: transparent;
+  color: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  -webkit-box-align: start;
+  align-items: start;
+  padding: 16rem 0px 8rem;
+`;
+
+const StyledWorkItem = styled.div`
+  grid-column: ${props => props.column} / span 4;
+  margin-bottom: 8rem;
 `;
 
 
@@ -386,40 +401,38 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="container pb-6">
-              <div className="row">
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
-                  </div>
+            <StyledWorkGroup>
+              <StyledWorkItem column={1}>
+                <div>
+                  <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
                 </div>
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
-                  </div>
+              </StyledWorkItem>
+              <StyledWorkItem column={6}>
+                <div>
+                  <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
                 </div>
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
-                  </div>
+              </StyledWorkItem>
+              <StyledWorkItem column={11}>
+                <div>
+                  <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
                 </div>
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
-                  </div>
+              </StyledWorkItem>
+              <StyledWorkItem column={2}>
+                <div>
+                  <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
                 </div>
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
-                  </div>
+              </StyledWorkItem>
+              <StyledWorkItem column={7}>
+                <div>
+                  <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
                 </div>
-                <div className="col-12 col-sm-6 col-md-6 mb-1">
-                  <div>
-                    <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp tương lương foods"/>
-                  </div>
+              </StyledWorkItem>
+              <StyledWorkItem column={12}>
+                <div>
+                  <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp tương lương foods"/>
                 </div>
-              </div>
-            </div>
+              </StyledWorkItem>
+            </StyledWorkGroup>
           </SectionWork>
         </Element>
         <Element name="blogSection">
