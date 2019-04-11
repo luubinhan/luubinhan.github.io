@@ -101,7 +101,7 @@ const SectionTop = styled.div`
   padding-bottom: 100px;
   background-image: url("/images/avatar.jpg");
   background-repeat: no-repeat;
-  background-position: 50vw center;
+  background-position: 50vw 10vh;
   background-size: auto 60vh;
 `;
 
@@ -119,6 +119,17 @@ const StyledWorkGroup = styled.div`
 const StyledWorkItem = styled.div`
   grid-column: ${props => props.column} / span 4;
   margin-bottom: 8rem;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+    width: 60px;
+    height: 60px;
+    background-color: ${props => props.color};
+  }
 `;
 
 
@@ -402,32 +413,32 @@ class Home extends React.Component {
               </div>
             </div>
             <StyledWorkGroup>
-              <StyledWorkItem column={1}>
+              <StyledWorkItem column={1} color="#00A5B4">
                 <div>
                   <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
                 </div>
               </StyledWorkItem>
-              <StyledWorkItem column={6}>
+              <StyledWorkItem column={6} color="#C9DC08">
                 <div>
                   <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
                 </div>
               </StyledWorkItem>
-              <StyledWorkItem column={11}>
+              <StyledWorkItem column={11} color="#00A5B4">
                 <div>
                   <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
                 </div>
               </StyledWorkItem>
-              <StyledWorkItem column={2}>
+              <StyledWorkItem column={2} color="#C9DC08">
                 <div>
                   <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
                 </div>
               </StyledWorkItem>
-              <StyledWorkItem column={7}>
+              <StyledWorkItem column={7} color="#00A5B4">
                 <div>
                   <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
                 </div>
               </StyledWorkItem>
-              <StyledWorkItem column={12}>
+              <StyledWorkItem column={12} color="#C9DC08">
                 <div>
                   <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp tương lương foods"/>
                 </div>
