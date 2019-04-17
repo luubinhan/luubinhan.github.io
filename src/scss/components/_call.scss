@@ -11,6 +11,7 @@
     flex: 1 0 auto;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
   }
   .call-box {
     background: #313241;
@@ -20,9 +21,6 @@
     margin-right: 20px;
     font-weight: 400;
     margin-bottom: 15px;
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 0;
-    }
   }
   .call-box-bottom {
     flex: 0 0 auto;

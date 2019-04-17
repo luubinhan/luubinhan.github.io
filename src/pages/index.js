@@ -250,7 +250,7 @@ class Home extends React.Component {
                             </blockquote>
                           </div>
                           <div className="testimonials-meta">
-                            <p className="testimonials-name">Tran Huy Minh</p>
+                            <p className="testimonials-name">Dang Huy Minh</p>
                             <p className="testimonials-jobtitle">Developer</p>
                           </div>
                         </div>
@@ -380,39 +380,6 @@ class Home extends React.Component {
       </div>
     );
   }
-  // const markdown = props.data.allMarkdownRemark.edges;
-  // const json = props.data.allFeaturesJson.edges;
 }
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            title
-            date(formatString: "DD MMMM YYYY")
-          }
-          excerpt
-        }
-      }
-    }
-    allFeaturesJson {
-      edges {
-        node {
-          id
-          title
-          description
-          image
-        }
-      }
-    }
-  }
-`;
 
 export default Home;
