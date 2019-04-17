@@ -147,14 +147,30 @@ html {
 }
 .lead {
   color: rgba(255,255,255,.6);
+  @media (max-width: 767px) {
+    font-size: 1rem;
+  }
+}
+.display-3 {
+  font-weight: 900;
+  @media (max-width: 767px) {
+    font-size: 3rem;
+  }
 }
 .media {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  @media (min-width: 768px) {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
   h5 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
     a {
       color: #313131;
     }

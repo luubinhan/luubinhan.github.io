@@ -6,6 +6,9 @@ const SectionTop = styled.div`
   background-repeat: no-repeat;
   background-position: 50vw 10vh;
   background-size: auto 60vh;
+  @media (max-width: 767px) {
+    background-image: none;
+  }
 `;
 
 export default SectionTop;

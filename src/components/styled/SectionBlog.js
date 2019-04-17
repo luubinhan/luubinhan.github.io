@@ -12,6 +12,7 @@ const SectionBlog = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   @media (max-width: 575px) {
     background: linear-gradient(to left, rgb(251, 250, 249) 90%, transparent 90%);
+    padding: 3rem 0;
   }
   &:after {
     bottom: 1rem;

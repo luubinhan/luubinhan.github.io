@@ -266,7 +266,7 @@ class Home extends React.Component {
             <Circle />
             <div className="container">
               <div className="row">
-                <div className="col-8 col-sm-6 col-md-6 offset-sm-4 offset-md-3">
+                <div className="col-8 col-sm-6 col-md-6 offset-2 offset-sm-4 offset-md-3">
                   <SectionHeaderWork>
                     <h2 className="display-3">Work</h2>
                     <p className="lead">

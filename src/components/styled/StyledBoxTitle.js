@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
 const StyledBoxTitle = styled.div`
-  position: absolute;
-  width: 40%;
   font-weight: 900;
   background: #e9f5f5;
   color: #202230;
   text-align: left;
   line-height: 1;
-  font-size: 2rem;
-  right: -10%;
-  top: 0;
-  padding: 30px;
+  font-size: 1.4rem;  
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
   @media (min-width: 576px) {
+    margin-bottom: 0;
+    font-size: 2rem; 
+    position: absolute;
+    width: 40%;
+    right: -10%;
+    top: 0;
+    padding: 30px;
   }
   @media (min-width: 768px) {
   }
@@ -25,12 +30,18 @@ const StyledBoxTitle = styled.div`
   &:after {
     content: "";
     display: block;
-    position: absolute;
-    left: 10%;
-    border: 1px solid #fff;
+    position: absolute;    
+    border: 1px solid #fff;    
+    left: -10%;
     right: 10%;
     bottom: 10%;
     top: 10%;
+    @media (min-width: 576px) {
+      left: 10%;
+      right: 10%;
+      bottom: 10%;
+      top: 10%;
+    }
   }
 `;
 

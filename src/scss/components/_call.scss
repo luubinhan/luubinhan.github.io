@@ -19,6 +19,10 @@
     border-radius: 5px;
     margin-right: 20px;
     font-weight: 400;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
   }
   .call-box-bottom {
     flex: 0 0 auto;
