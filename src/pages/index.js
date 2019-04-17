@@ -5,6 +5,15 @@ import styled from 'styled-components';
 import Scroll from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import SEO from '../components/SEO';
+import StyledBoxTitle from '../components/styled/StyledBoxTitle';
+import StyledWorkGroup from '../components/styled/StyledWorkGroup';
+import StyledWorkItem from '../components/styled/StyledWorkItem';
+import StyledBlogTitle from '../components/styled/StyledBlogTitle';
+import SectionBlog from '../components/styled/SectionBlog';
+import SectionWork from '../components/styled/SectionWork';
+import SectionHeaderWork from '../components/styled/SectionHeaderWork';
+import SectionTestimony from '../components/styled/SectionTestimony';
+import SectionTop from '../components/styled/SectionTop';
 import Footer from '../components/Footer';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
@@ -18,68 +27,11 @@ const {
   scrollSpy,
 } = Scroll;
 
-const SectionBlog = styled.div`
-  margin-top: 3rem;
-  position: relative;
-  background: linear-gradient(to left, rgb(251, 250, 249) 75%, transparent 75%);
-  padding: 8rem 0px; 
-  -webkit-box-align: center;
-  align-items: center;
-  display: grid;
-  color: #313131;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  &:after {
-    bottom: 1rem;
-    content: "";
-    height: 3rem;
-    left: 1rem;
-    position: absolute;
-    width: 3rem;
-    background: #38adba;
-    display: block;
-  }
-  &:before {
-    content: "";
-    display: block;
-    height: 5rem;
-    right: 1rem;
-    position: absolute;
-    width: 5rem;
-    top: -3rem;
-    background: #ccdf2b;
-  }
-  .lead {
-    color: rgba(0,0,0,.8);
-  }
-`;
-
 const BlogInner = styled.div`
   grid-row: 1 / auto;
   grid-column: 7 / span 8;
 `;
 
-const SectionWork = styled.div`
-  position: relative;
-  &:after {
-    content: "";
-    height: 28rem;
-    left: 6.25vw;
-    position: absolute;
-    top: 16rem;
-    width: 18.75vw;
-    display: block;
-    background: url("/dot.svg") center top / contain repeat-y;
-  }
-  &:before {
-    content: "";
-    height: 16rem;
-    left: 14.275vw;
-    position: absolute;
-    top: 0px;
-    width: 2px;
-    background: rgb(136, 136, 136);
-  }
-`;
 
 const Circle = styled.div`
   content: "";
@@ -91,104 +43,11 @@ const Circle = styled.div`
   background: url("/circle.svg") center top / contain no-repeat rgb(32, 34, 48);
 `;
 
-const SectionHeaderWork = styled.div`
-  padding-top: 150px;
-  padding-bottom: 50px;
-  margin-bottom: 60px;
-`;
-
-const SectionTop = styled.div`
-  padding-bottom: 100px;
-  background-image: url("/images/avatar.jpg");
-  background-repeat: no-repeat;
-  background-position: 50vw 10vh;
-  background-size: auto 60vh;
-`;
-
-const StyledWorkGroup = styled.div`
-  background-color: transparent;
-  color: inherit;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  position: relative;
-  -webkit-box-align: start;
-  align-items: start;
-  padding: 16rem 0px 8rem;
-`;
-
-const StyledWorkItem = styled.div`
-  grid-column: ${props => props.column} / span 4;
-  margin-bottom: 8rem;
-  position: relative;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: -30px;
-    bottom: -10px;
-    width: 60px;
-    height: 60px;
-    background-color: ${props => props.color};
-  }
-`;
-
-
 const SectionTestimonyInner = styled.div`
   background: #fbfaf9;
   color: #686868;
   padding-top: 100px;
   padding-bottom: 100px;
-`;
-
-const SectionTestimony = styled.div`
-  background: #202230;
-  padding-right: 20%;
-  position: relative;
-  min-height: 100vh;
-  &:after {
-    content: "";
-    display: block;
-    width: 90px;
-    height: 90px;
-    background: #38adba;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-  }
-  &:before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    background: #ccdf2b;
-    position: absolute;
-    right: 15%;
-    bottom: 10%;
-  }
-`;
-
-const StyledBoxTitle = styled.div`
-  position: absolute;
-  right: -10%;
-  top: 0;
-  width: 40%;
-  padding: 100px;
-  font-weight: 900;
-  background: #e9f5f5;
-  color: #202230;
-  font-size: 5rem;
-  text-align: left;
-  line-height: 1;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 10%;
-    border: 1px solid #fff;
-    right: 10%;
-    bottom: 10%;
-    top: 10%;
-  }
 `;
 
 class Home extends React.Component {
@@ -318,22 +177,20 @@ class Home extends React.Component {
           <SectionTop>
             <div className="intro pb-4">
               <div className="container">
-                <h1>A coder, a designer, a photographer, and a <i className="text-primary">movie goer</i></h1>
+                <h1>
+                  A coder, a designer, a photographer, and a <i className="text-primary">movie goer</i>
+                </h1>
                 <p>
                   I moved to the largest city in Vietnam, formerly named Saigon in 2007 and became a web tailor since 2011
                 </p>
                 <p>
-                I currently work for Infinito Blockchains Labs, as a Frontend Developer.
+                  I currently work for Infinito Blockchains Labs, as a Frontend Developer.
                 </p>
                 <p>
                   Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information.
                 </p>
-                <img src="" alt=""/>
-                
+                <Call />
               </div>
-            </div>
-            <div className="container pt-2">
-              <Call />
             </div>
           </SectionTop>
         </Element>
@@ -448,8 +305,8 @@ class Home extends React.Component {
         </Element>
         <Element name="blogSection">
           <SectionBlog>
+            <StyledBlogTitle>Blog</StyledBlogTitle>
             <BlogInner>
-              <h2 className="display-4" style={{ color: '#111' }}>Blog</h2>
               <p className="lead">
                 Since 2017, after 3 years spending time with WordPress, I feel out of date with new web technologies, to help myself and others who have difficulty learning modern web development trend, I start to write a blog, hopefully, it can bring knowledge to Vietnam student who has trouble looking for the resource in Vietnamese. And now it becomes a hobby for every weekend
               </p>
