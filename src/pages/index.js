@@ -18,6 +18,7 @@ import Footer from '../components/Footer';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
+import '../scss/style.scss';
 
 const {
   Link,
