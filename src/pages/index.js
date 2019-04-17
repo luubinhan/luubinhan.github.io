@@ -186,7 +186,7 @@ class Home extends React.Component {
             <div className="intro pb-4">
               <div className="container">
                 <h1>
-                  A coder, a designer, a photographer, and a <i className="text-primary">movie goer</i>
+                  A coder, <span className="d-block d-sm-block d-md-none" /> a designer,<span className="d-block d-sm-block d-md-none" /> a photographer,<span className="d-block d-sm-block d-md-none" /> <span style={{ fontWeight: 100 }}>and</span><span className="d-block d-sm-block d-md-none" /> <i className="text-primary">a movie goer</i>
                 </h1>
                 <p>
                   I moved to the largest city in Vietnam, formerly named Saigon in 2007 and became a web tailor since 2011
