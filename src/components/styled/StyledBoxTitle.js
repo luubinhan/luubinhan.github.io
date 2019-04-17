@@ -2,16 +2,26 @@ import styled from 'styled-components';
 
 const StyledBoxTitle = styled.div`
   position: absolute;
-  right: -10%;
-  top: 0;
   width: 40%;
-  padding: 100px;
   font-weight: 900;
   background: #e9f5f5;
   color: #202230;
-  font-size: 5rem;
   text-align: left;
   line-height: 1;
+  font-size: 2rem;
+  right: -10%;
+  top: 0;
+  padding: 30px;
+  @media (min-width: 576px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 992px) {
+    font-size: 5rem;
+    right: -10%;
+    top: 0;
+    padding: 100px;
+  }
   &:after {
     content: "";
     display: block;

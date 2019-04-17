@@ -32,8 +32,16 @@ div .testimonial:nth-child(2n + 1) {
     flex: 1;
     margin-bottom: 10px;
     text-align: right;
+    font-size: .8rem;
     p {
       margin-bottom: 0;
+    }
+    @media (min-width: 576px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+      font-size: 1rem;
     }
   }
   .testimonials-title {
@@ -51,13 +59,22 @@ div .testimonial:nth-child(2n + 1) {
     flex: 1 0 100%;
     blockquote {
       display: block;
-      padding: 1.5em;
-      margin: 1.5em 0;
       position: relative;
-      font-size: 2rem;
       line-height: 1.2;
       font-weight: 300;
       background: #fff;
+      font-size: 1rem;
+      padding: 1em;
+      margin: 1em 0;
+      @media (min-width: 576px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 992px) {
+        font-size: 2rem;
+        padding: 1.5em;
+        margin: 1.5em 0;
+      }
     }
     blockquote:before {
       content: '\201C';

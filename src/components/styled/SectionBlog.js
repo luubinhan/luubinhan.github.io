@@ -10,6 +10,9 @@ const SectionBlog = styled.div`
   display: grid;
   color: #313131;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  @media (max-width: 575px) {
+    background: linear-gradient(to left, rgb(251, 250, 249) 90%, transparent 90%);
+  }
   &:after {
     bottom: 1rem;
     content: "";
@@ -19,6 +22,10 @@ const SectionBlog = styled.div`
     width: 3rem;
     background: #38adba;
     display: block;
+    @media (max-width: 575px) {
+      height: 2rem;
+      width: 2rem;
+    }
   }
   &:before {
     content: "";
@@ -29,6 +36,16 @@ const SectionBlog = styled.div`
     width: 5rem;
     top: -3rem;
     background: #ccdf2b;
+    @media (max-width: 767px) {
+      width: 4rem;
+      height: 4rem;
+      top: -2.5rem;
+    }
+    @media (max-width: 575px) {
+      width: 3rem;
+      height: 3rem;
+      top: -2rem;
+    }
   }
   .lead {
     color: rgba(0,0,0,.8);

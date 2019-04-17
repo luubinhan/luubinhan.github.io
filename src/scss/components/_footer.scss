@@ -18,8 +18,10 @@
     font-family: $font-family-heading;
     margin-bottom: 10px;
     flex: 0;
+    display: none;
     @include media-breakpoint-up(sm) {
       margin: 0;
+      display: block;
     }
   }
   ul {
@@ -27,6 +29,12 @@
     margin: 0;
     padding: 0;
     flex: 1;
+    @media (max-width: 575px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     svg {
       width: 20px;
       path {
@@ -50,6 +58,11 @@
       &.copyright {
         font-weight: bold;
         color: #ffffff;
+        @media (max-width: 575px) {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
       }
     }
     @include media-breakpoint-up(sm) {

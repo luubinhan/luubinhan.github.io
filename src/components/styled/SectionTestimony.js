@@ -5,25 +5,40 @@ const SectionTestimony = styled.div`
   padding-right: 20%;
   position: relative;
   min-height: 100vh;
+  @media (max-width: 991px) {
+    min-height: 0;
+  }
   &:after {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     background: #38adba;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 10px;
+    @media (min-width: 768px) {
+      width: 90px;
+      height: 90px;
+      right: 30px;
+      top: 30px;
+    }
   }
   &:before {
     content: "";
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     background: #ccdf2b;
     position: absolute;
-    right: 15%;
-    bottom: 10%;
+    right: 20%;
+    bottom: 0%;
+    @media (min-width: 768px) {
+      width: 70px;
+      height: 70px;
+      right: 15%;
+      bottom: 10%;
+    }
   }
 `;
 

@@ -30,6 +30,9 @@ const {
 const BlogInner = styled.div`
   grid-row: 1 / auto;
   grid-column: 7 / span 8;
+  @media (max-width: 575px) {
+    grid-column: 4 / span 12;
+  }
 `;
 
 
@@ -48,6 +51,10 @@ const SectionTestimonyInner = styled.div`
   color: #686868;
   padding-top: 100px;
   padding-bottom: 100px;
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 `;
 
 class Home extends React.Component {

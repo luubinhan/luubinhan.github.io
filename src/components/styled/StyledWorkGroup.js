@@ -8,7 +8,10 @@ const StyledWorkGroup = styled.div`
   position: relative;
   -webkit-box-align: start;
   align-items: start;
-  padding: 16rem 0px 8rem;
+  padding: 0 0 4rem;
+  @media (min-width: 768px) {
+    padding: 16rem 0px 8rem;
+  }
 `;
 
 export default StyledWorkGroup;
