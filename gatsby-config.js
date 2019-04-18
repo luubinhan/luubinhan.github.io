@@ -27,6 +27,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
@@ -49,6 +50,17 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'luubinhan.github.io',
+        short_name: 'luubinhan.github.io',
+        start_url: '/',
+        background_color: '#202230',
+        theme_color: '#38adba',
+        display: 'standalone',
       },
     },
     {
