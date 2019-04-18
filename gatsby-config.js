@@ -56,7 +56,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'luubinhan.github.io',
-        short_name: 'luubinhan.github.io',
+        short_name: 'luckyluu',
         start_url: '/',
         background_color: '#202230',
         theme_color: '#38adba',
