@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 const StyledWorkItem = styled.div`
-  grid-column: ${props => props.column} / span 4;
+  grid-column: auto / span 7;
   margin-bottom: 2rem;
+  margin-left: 30px;
   position: relative;
   @media (min-width: 768px) {
     margin-bottom: 8rem;
+    margin-left: 0;
+    grid-column: ${props => props.column} / span 4;
   }
   &:after {
     content: "";
@@ -22,6 +25,12 @@ const StyledWorkItem = styled.div`
       width: 60px;
       height: 60px;
     }
+  }
+  .title {
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+    padding-right: 30px;
   }
 `;
 

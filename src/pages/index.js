@@ -60,22 +60,22 @@ const SectionTestimonyInner = styled.div`
 
 class Home extends React.Component {
   state = {
-    appearIn: false
+    appearIn: false,
   }
 
   componentDidMount() {
-    Events.scrollEvent.register("begin", function() {
-      console.log("begin", arguments);
+    Events.scrollEvent.register('begin', function () {
+      console.log('begin', arguments);
     });
 
-    Events.scrollEvent.register("end", function() {
-      console.log("end", arguments);
+    Events.scrollEvent.register('end', function () {
+      console.log('end', arguments);
     });
     const { appearIn } = this.state;
     const testimonySection = document.querySelector('#testimonyId');
-    window && window.addEventListener('scroll', event => {
-      if (isInViewport(testimonySection) && appearIn === false ) {
-        this.setState({ appearIn: true })
+    window && window.addEventListener('scroll', (event) => {
+      if (isInViewport(testimonySection) && appearIn === false) {
+        this.setState({ appearIn: true });
       }
     }, false);
 
@@ -186,13 +186,26 @@ class Home extends React.Component {
             <div className="intro pb-4">
               <div className="container">
                 <h1>
-                  A coder, <span className="d-block d-sm-block d-md-none" /> a designer,<span className="d-block d-sm-block d-md-none" /> a photographer,<span className="d-block d-sm-block d-md-none" /> <span style={{ fontWeight: 100 }}>and</span><span className="d-block d-sm-block d-md-none" /> <i className="text-primary">a movie goer</i>
+                  A coder,
+                  {' '}
+                  <span className="d-block d-sm-block d-md-none" />
+                  {' '}
+                  a designer,
+                  <span className="d-block d-sm-block d-md-none" />
+                  {' '}
+                  a photographer,
+                  <span className="d-block d-sm-block d-md-none" />
+                  {' '}
+                  <span style={{ fontWeight: 100 }}>and</span>
+                  <span className="d-block d-sm-block d-md-none" />
+                  {' '}
+                  <i className="text-primary">a movie goer</i>
                 </h1>
                 <p>
-                  I moved to the largest city in Vietnam, formerly named Saigon in 2007 and became a web tailor since 2011
+                  I moved to the largest city in Vietnam formerly named Saigon in 2007, became a web tailor since 2011
                 </p>
                 <p>
-                  I currently work for Infinito Blockchains Labs, as a Frontend Developer.
+                  I currently work at Infinito Blockchains Labs as a Frontend Developer.
                 </p>
                 <p>
                   Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information.
@@ -282,31 +295,37 @@ class Home extends React.Component {
                 <div>
                   <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
                 </div>
+                <span className="title" aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa">Brochure công ty Bách Khoa</span>
               </StyledWorkItem>
               <StyledWorkItem column={6} color="#C9DC08">
                 <div>
                   <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
                 </div>
+                <a href="http://bellowphotobooth.com/vi/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Photobooth">Website Bellow Photobooth</a>
               </StyledWorkItem>
               <StyledWorkItem column={11} color="#00A5B4">
                 <div>
                   <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
                 </div>
+                <span className="title" aria-label="Website Chất Production">Website Chất Production</span>
               </StyledWorkItem>
               <StyledWorkItem column={2} color="#C9DC08">
                 <div>
                   <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
                 </div>
+                <a href="http://www.drill-inc.jp/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Drill-inc">Website Bellow Drill-inc</a>
               </StyledWorkItem>
               <StyledWorkItem column={7} color="#00A5B4">
                 <div>
                   <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
                 </div>
+                <a href="https://tipit.vn/" rel="noopener noreferrer" target="_blank" className="title" aria-label="Website Tipit.vn">Website Tipit.vn</a>
               </StyledWorkItem>
               <StyledWorkItem column={12} color="#C9DC08">
                 <div>
-                  <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp tương lương foods"/>
+                  <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
                 </div>
+                <a href="http://tuonglaifoods.vn" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Tương Lai foods">Website Tương Lai foods</a>
               </StyledWorkItem>
             </StyledWorkGroup>
           </SectionWork>
@@ -316,7 +335,7 @@ class Home extends React.Component {
             <StyledBlogTitle>Blog</StyledBlogTitle>
             <BlogInner>
               <p className="lead">
-                Since 2017, after 3 years spending time with WordPress, I feel out of date with new web technologies, to help myself and others who have difficulty learning modern web development trend, I start to write a blog, hopefully, it can bring knowledge to Vietnam student who has trouble looking for the resource in Vietnamese. And now it becomes a hobby for every weekend
+                Since 2017, after 3 years working with WordPress, I feel out of date with lastest trend of web, to teach myself and others who have difficulty to keep update with modern web development, I start to write a blog, hopefully, it can bring knowledge to Vietnam student who has trouble looking for the resource in Vietnamese. And now it becomes a hobby for every weekend
               </p>
               <div className="container">
                 <div className="media">
