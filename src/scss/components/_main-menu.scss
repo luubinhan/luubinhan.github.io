@@ -20,6 +20,13 @@
       &:last-of-type {
         margin: 0;
       }
+      &.contact-nav {
+        border: 1px solid #fff;
+        margin-left: 30px;
+        &:hover {
+          border-color: $primary;
+        }
+      }
       > a {
         height: inherit;
         display: inline-block;

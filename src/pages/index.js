@@ -160,17 +160,7 @@ class Home extends React.Component {
                     People Said
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="topSection"
-                    spy
-                    smooth
-                    duration={500}
-                  >
-                    Contact Me
-                  </Link>
-                </li>
+                
                 <li>
                   <Link
                     activeClass="active"
@@ -180,6 +170,17 @@ class Home extends React.Component {
                     duration={500}
                   >
                     Blog
+                  </Link>
+                </li>
+                <li class="contact-nav">
+                  <Link
+                    activeClass="active"
+                    to="topSection"
+                    spy
+                    smooth
+                    duration={500}
+                  >
+                    Contact Me
                   </Link>
                 </li>
               </ul>
