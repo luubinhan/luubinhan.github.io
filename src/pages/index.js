@@ -213,6 +213,21 @@ class Home extends React.Component {
                 <Call />
               </div>
             </div>
+            <div className="hero-figure anime-element">
+							<svg className="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style={{fill: 'transparent'}}></rect>
+							</svg>
+							<div className="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div className="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div className="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div className="hero-figure-box hero-figure-box-04" data-rotation="-135deg" ></div>
+							<div className="hero-figure-box hero-figure-box-05" ></div>
+							<div className="hero-figure-box hero-figure-box-06" ></div>
+							<div className="hero-figure-box hero-figure-box-07" ></div>
+							<div className="hero-figure-box hero-figure-box-08" data-rotation="-22deg" ></div>
+							<div className="hero-figure-box hero-figure-box-09" data-rotation="-52deg" ></div>
+							<div className="hero-figure-box hero-figure-box-10" data-rotation="-50deg" ></div>
+						</div>
           </SectionTop>
         </Element>
         <Element name="testimonySection">
@@ -268,6 +283,21 @@ class Home extends React.Component {
                           </div>
                         </div>
                       </Fade>
+                      <Fade when={appearIn} left distance="50px" delay={400}>
+                        <div className="testimonial transform">
+                          <div
+                            className="testimonials-content"
+                          >
+                            <blockquote>
+                            The best newcomer
+                            </blockquote>
+                          </div>
+                          <div className="testimonials-meta">
+                            <p className="testimonials-name">Vo Tan Phong</p>
+                            <p className="testimonials-jobtitle">Team Leader</p>
+                          </div>
+                        </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>
@@ -291,6 +321,12 @@ class Home extends React.Component {
               </div>
             </div>
             <StyledWorkGroup>
+              <StyledWorkItem column={6} color="#C9DC08">
+                <div>
+                  <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                </div>
+                <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
+              </StyledWorkItem>
               <StyledWorkItem column={1} color="#00A5B4">
                 <div>
                   <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
