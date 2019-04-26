@@ -130,6 +130,10 @@ class Home extends React.Component {
                 duration={500}
               >
                 <img height="30" alt="Luckyluu Homepage" src={logoMobile} />
+                <span className="brand-name">
+                  lucky
+                  <span>luu</span>
+                </span>
               </Link>
             </div>
             <div id="main-menu" className="main-menu">
@@ -200,7 +204,7 @@ class Home extends React.Component {
                   <span style={{ fontWeight: 100 }}>and</span>
                   <span className="d-block d-sm-block d-md-none" />
                   {' '}
-                  <i className="text-primary">a movie goer</i>
+                  <i className="hightlight">a movie goer</i>
                 </h1>
                 <p>
                   I moved to the largest city in Vietnam formerly named Saigon in 2007, became a web tailor since 2011
@@ -215,10 +219,7 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="hero-figure anime-element">
-							<svg className="placeholder" width="528" height="396" viewBox="0 0 528 396">
-								<rect width="528" height="396" style={{fill: 'transparent'}}></rect>
-							</svg>
-              <Reveal effect="fadeInUp">
+              <Reveal effect="animateBox1">
 							  <div className="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>              
               </Reveal>
               <Reveal effect="animateBox2">
@@ -331,46 +332,74 @@ class Home extends React.Component {
             </div>
             <StyledWorkGroup>
               <StyledWorkItem column={6} color="#C9DC08">
-                <div>
-                  <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
-                </div>
-                <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                    </div>
+                    <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={1} color="#00A5B4">
-                <div>
-                  <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
-                </div>
-                <span className="title" aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa">Brochure công ty Bách Khoa</span>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
+                    </div>
+                    <span className="title" aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa">Brochure công ty Bách Khoa</span>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={6} color="#C9DC08">
-                <div>
-                  <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
-                </div>
-                <a href="http://bellowphotobooth.com/vi/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Photobooth">Website Bellow Photobooth</a>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                    </div>
+                    <a href="http://bellowphotobooth.com/vi/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Photobooth">Website Bellow Photobooth</a>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={11} color="#00A5B4">
-                <div>
-                  <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
-                </div>
-                <span className="title" aria-label="Website Chất Production">Website Chất Production</span>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
+                    </div>
+                    <span className="title" aria-label="Website Chất Production">Website Chất Production</span>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={2} color="#C9DC08">
-                <div>
-                  <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
-                </div>
-                <a href="http://www.drill-inc.jp/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Drill-inc">Website Bellow Drill-inc</a>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
+                    </div>
+                    <a href="http://www.drill-inc.jp/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Drill-inc">Website Bellow Drill-inc</a>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={7} color="#00A5B4">
-                <div>
-                  <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
-                </div>
-                <a href="https://tipit.vn/" rel="noopener noreferrer" target="_blank" className="title" aria-label="Website Tipit.vn">Website Tipit.vn</a>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
+                    </div>
+                    <a href="https://tipit.vn/" rel="noopener noreferrer" target="_blank" className="title" aria-label="Website Tipit.vn">Website Tipit.vn</a>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
               <StyledWorkItem column={12} color="#C9DC08">
-                <div>
-                  <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
-                </div>
-                <a href="http://tuonglaifoods.vn" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Tương Lai foods">Website Tương Lai foods</a>
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
+                    </div>
+                    <a href="http://tuonglaifoods.vn" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Tương Lai foods">Website Tương Lai foods</a>
+                  </div>
+                </Reveal>
               </StyledWorkItem>
             </StyledWorkGroup>
           </SectionWork>

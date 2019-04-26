@@ -242,9 +242,9 @@ html {
   background: linear-gradient(to left top, $primary, rgba(0,191,251,0));
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  &.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+  &.animateBox1 {
+    -webkit-animation-name: animateBox1;
+    animation-name: animateBox1;
   }
 }
 .hero-figure-box-01::before {
@@ -252,7 +252,7 @@ html {
   -webkit-transform: rotateZ(45deg) scale(1.5);
   transform: rotateZ(45deg) scale(1.5);
 }
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes animateBox1 {
   from {
     opacity: 0;
     width: 0;
@@ -354,13 +354,25 @@ html {
 .hero-figure-box-06 {
   left: 65.5%;
   top: 6.3%;
-  width: 120px;
-  height: 120px;
+  width: 10vw;
+  height: 10vw;
   -webkit-transform: rotateZ(20deg);
   transform: rotateZ(20deg);
   &.animateBox2 {
-    -webkit-animation-name: animateBox2;
-    animation-name: animateBox2;
+    -webkit-animation-name: animateBox6;
+    animation-name: animateBox6;
+  }
+}
+@-webkit-keyframes animateBox6 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(20deg);
+    transform: rotateZ(20deg); 
   }
 }
 .hero-figure-box-07 {
@@ -407,4 +419,43 @@ html {
   background: rgba(0,191,251,0.32);
   -webkit-transform: rotateZ(-50deg);
   transform: rotateZ(-50deg);
+}
+
+.hightlight {
+  background: $primary;
+  color: #fff;
+  padding-right: 12px;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }

@@ -4,15 +4,7 @@
     display: block;
     width: 200px;
   }
-  .brand-name {
-    padding-left: 10px;
-    font-weight: 900;
-    color: #38adba;
-    font-size: 1.3em;
-    span {
-      color: #ccdf2b;
-    }
-  }
+  
   a {
     display: block;
     width: 100%;
@@ -22,16 +14,19 @@
     }
   }
 }
-
+.brand-name {
+  padding-left: 10px;
+  font-weight: 900;
+  color: #38adba;
+  font-size: 1.3em;
+  span {
+    color: #ccdf2b;
+  }
+}
 .logo-mobile {
   display: block;
-  width: 50px;
   @include media-breakpoint-up(sm) {
     display: none;
-  }
-  img {
-    width: 100%;
-    height: auto;
   }
   a {
     display: block;
