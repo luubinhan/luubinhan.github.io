@@ -336,7 +336,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                      <img src="/images/screen-shot-website-platformio.jpg" title="Screenshot website Infinito Blockchains Platform" alt="Screenshot website Infinito Blockchains Platform" />
                     </div>
                     <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
                   </div>
@@ -346,7 +346,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/bachkhoa.jpg" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
+                      <img src="/images/bachkhoa.jpg" title="Brochure công ty TNHH giải pháp tin học Bách Khoa" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
                     </div>
                     <span className="title" aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa">Brochure công ty Bách Khoa</span>
                   </div>
@@ -356,7 +356,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/bellow-photobooth.jpg" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                      <img src="/images/bellow-photobooth.jpg" title="Screenshot website doanh nghiệp bellow photobooth" alt="Screenshot website doanh nghiệp bellow photobooth" />
                     </div>
                     <a href="http://bellowphotobooth.com/vi/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Photobooth">Website Bellow Photobooth</a>
                   </div>
@@ -366,7 +366,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/chat.jpg" alt="Screenshot website Chất Production" />
+                      <img src="/images/chat.jpg" title="Screenshot website Chất Production" alt="Screenshot website Chất Production" />
                     </div>
                     <span className="title" aria-label="Website Chất Production">Website Chất Production</span>
                   </div>
@@ -376,7 +376,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/drill-inc.jpg" alt="Screenshot website doanh nghiệp drill-inc"/>
+                      <img src="/images/drill-inc.jpg" title="Screenshot website doanh nghiệp drill-inc" alt="Screenshot website doanh nghiệp drill-inc"/>
                     </div>
                     <a href="http://www.drill-inc.jp/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Drill-inc">Website Bellow Drill-inc</a>
                   </div>
@@ -386,7 +386,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/tipit-screenshot.jpg" alt="Screenshot website doanh nghiệp Tipit"/>
+                      <img src="/images/tipit-screenshot.jpg" title="Screenshot website doanh nghiệp Tipit" alt="Screenshot website doanh nghiệp Tipit"/>
                     </div>
                     <a href="https://tipit.vn/" rel="noopener noreferrer" target="_blank" className="title" aria-label="Website Tipit.vn">Website Tipit.vn</a>
                   </div>
@@ -396,7 +396,7 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/tuonglai-foods.jpg" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
+                      <img src="/images/tuonglai-foods.jpg" title="Screenshot Website doanh nghiệp Tương Lai foods" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
                     </div>
                     <a href="http://tuonglaifoods.vn" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Tương Lai foods">Website Tương Lai foods</a>
                   </div>
