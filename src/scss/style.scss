@@ -335,6 +335,9 @@ html {
   z-index: 9;
   -webkit-transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
   transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
+  @media (max-width: 768px) {
+    display: none;
+  }
   &.animateMyImage {
     -webkit-animation-name: animateMyImage;
     animation-name: animateMyImage;

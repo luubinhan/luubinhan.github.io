@@ -240,9 +240,6 @@ class Home extends React.Component {
 							  <div className="hero-figure-box hero-figure-box-06" ></div>
               </Reveal>
 							<div className="hero-figure-box hero-figure-box-07" ></div>
-							<div className="hero-figure-box hero-figure-box-08" data-rotation="-22deg" ></div>
-							<div className="hero-figure-box hero-figure-box-09" data-rotation="-52deg" ></div>
-							<div className="hero-figure-box hero-figure-box-10" data-rotation="-50deg" ></div>
 						</div>
           </SectionTop>
         </Element>
