@@ -10,7 +10,7 @@ const StyledWorkGroup = styled.div`
   align-items: start;
   padding: 0 0 4rem;
   @media (min-width: 768px) {
-    padding: 16rem 0px 8rem;
+    padding: 0rem 0px 8rem;
   }
 `;
 

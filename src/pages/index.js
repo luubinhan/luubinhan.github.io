@@ -220,6 +220,11 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="hero-figure anime-element">
+              <Reveal effect="animateMyImage">
+                <div className="my-image">
+                  <img src="/images/my-image.jpg" alt="coder, designer, photographer, website, wordpress, frontend" />
+                </div>
+              </Reveal>
               <Reveal effect="animateBox1">
 							  <div className="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>              
               </Reveal>
@@ -332,13 +337,35 @@ class Home extends React.Component {
               </div>
             </div>
             <StyledWorkGroup>
-              <StyledWorkItem column={6} color="#C9DC08">
+              <StyledWorkItem column={2} color="#C9DC08">
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
                       <img src="/images/screen-shot-website-platformio.jpg" title="Screenshot website Infinito Blockchains Platform" alt="Screenshot website Infinito Blockchains Platform" />
                     </div>
                     <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
+                  </div>
+                </Reveal>
+              </StyledWorkItem>
+              <StyledWorkItem column={7} color="#00A5B4">
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/brochure-wifi-3.jpg" title="Brochure wifi marketing 3.0" alt="Brochure wifi marketing 3.0" />
+                    </div>
+                    <span className="title">
+                    Brochure wifi marketing 3.0
+                    </span>
+                  </div>
+                </Reveal>
+              </StyledWorkItem>
+              <StyledWorkItem column={12} color="#C9DC08">
+                <Reveal effect="fadeInUp">
+                  <div>
+                    <div>
+                      <img src="/images/screen-shot-ngoc-ha-jade-river.jpg" title="Screenshot Website doanh nghiệp Ngoc Ha Jade River" alt="Screenshot Website doanh nghiệp Ngoc Ha Jade River" />
+                    </div>
+                    <a href="http://ngochajaderiver.com/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Ngoc Ha Jade River">Website Ngoc Ha Jade River</a>
                   </div>
                 </Reveal>
               </StyledWorkItem>

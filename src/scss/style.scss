@@ -326,6 +326,32 @@ html {
   -webkit-transform: rotateZ(-45deg) scale(1.5);
   transform: rotateZ(-45deg) scale(1.5);
 }
+.my-image {
+  position: absolute;
+  right: 9%;
+  top: 20%;
+  width: 30vw;
+  height: 30vw;
+  z-index: 9;
+  -webkit-transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
+  transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
+  &.animateMyImage {
+    -webkit-animation-name: animateMyImage;
+    animation-name: animateMyImage;
+  }  
+}
+@-webkit-keyframes animateMyImage {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(500px) rotateY(-50deg) rotateX(30deg) rotateZ(-5deg);
+    transform: perspective(500px) rotateY(-50deg) rotateX(30deg) rotateZ(-5deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
+    transform: perspective(500px) rotateY(17deg) rotateX(-10deg) rotateZ(2deg);
+  }
+}
 .hero-figure-box-05 {
   right: 10%;
   top: 13.3%;
