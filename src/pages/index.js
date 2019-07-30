@@ -172,7 +172,7 @@ class Home extends React.Component {
                     Blog
                   </Link>
                 </li>
-                <li class="contact-nav">
+                <li className="contact-nav">
                   <Link
                     activeClass="active"
                     to="topSection"
@@ -192,29 +192,34 @@ class Home extends React.Component {
             <div className="intro pb-4">
               <div className="container">
                 <h1>
-                  A coder,
+                  <span className="hightlight">
+                  A coder
+                  </span>
                   {' '}
-                  <span className="d-block d-sm-block d-md-none" />
+                  <span className="d-block d-sm-block d-md-block" />
                   {' '}
-                  a designer,
-                  <span className="d-block d-sm-block d-md-none" />
+                  <span className="hightlight">
+                  a designer
+                  </span>
+                  <span className="d-block d-sm-block d-md-block" />
                   {' '}
-                  a photographer,
-                  <span className="d-block d-sm-block d-md-none" />
+                  <span className="hightlight">
+                  a photographer
+                  </span>
+                  <span className="d-block d-sm-block d-md-block" />
                   {' '}
-                  <span style={{ fontWeight: 100 }}>and</span>
-                  <span className="d-block d-sm-block d-md-none" />
+                  <span className="d-block d-sm-block d-md-block" />
                   {' '}
-                  <i className="hightlight">a movie goer</i>
+                  <i className="hightlight">and a movie goer</i>
                 </h1>
                 <p>
-                  I moved to the largest city in Vietnam formerly named Saigon in 2007, became a web tailor since 2011
+                  I moved to the Saigon in 2007 and became a web tailor since 2011
                 </p>
                 <p>
-                  I currently work at Infinito Blockchains Labs as a Frontend Developer.
+                  I currently work at Infinito Blockchains Labs as a Frontend Developer
                 </p>
                 <p>
-                  Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information.
+                  Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information
                 </p>
                 <Call />
               </div>
