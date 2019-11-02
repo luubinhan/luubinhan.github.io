@@ -213,10 +213,10 @@ class Home extends React.Component {
                   <i className="hightlight">and a movie goer</i>
                 </h1>
                 <p>
-                  I moved to the Saigon in 2007 and became a web tailor since 2011
+                  I moved to the Ho Chi Minh City in 2007 and became a web tailor since 2011
                 </p>
                 <p>
-                  I currently work at Infinito Blockchains Labs as a Frontend Developer
+                  I currently work at PYCOGROUP as a Senior Frontend Developer
                 </p>
                 <p>
                   Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information
