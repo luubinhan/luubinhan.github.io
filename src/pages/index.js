@@ -146,10 +146,10 @@ class Home extends React.Component {
                     smooth
                     duration={500}
                   >
-                    Work
+                    Sản phẩm đã thực hiện
                   </Link>
                 </li>
-                <li>
+                <li style={{ display: 'none' }}>
                   <Link
                     activeClass="active"
                     to="testimonySection"
@@ -160,7 +160,7 @@ class Home extends React.Component {
                     People Said
                   </Link>
                 </li>
-                
+
                 <li>
                   <Link
                     activeClass="active"
@@ -169,7 +169,7 @@ class Home extends React.Component {
                     smooth
                     duration={500}
                   >
-                    Blog
+                    Trang blog
                   </Link>
                 </li>
                 <li className="contact-nav">
@@ -180,7 +180,7 @@ class Home extends React.Component {
                     smooth
                     duration={500}
                   >
-                    Contact Me
+                    LIÊN HỆ
                   </Link>
                 </li>
               </ul>
@@ -192,77 +192,90 @@ class Home extends React.Component {
             <div className="intro pb-4">
               <div className="container">
                 <h1>
-                  <span className="hightlight">
-                  A coder
-                  </span>
-                  {' '}
-                  <span className="d-block d-sm-block d-md-block" />
-                  {' '}
-                  <span className="hightlight">
-                  a designer
-                  </span>
-                  <span className="d-block d-sm-block d-md-block" />
-                  {' '}
-                  <span className="hightlight">
-                  a photographer
-                  </span>
-                  <span className="d-block d-sm-block d-md-block" />
-                  {' '}
-                  <span className="d-block d-sm-block d-md-block" />
-                  {' '}
-                  <i className="hightlight">and a movie goer</i>
+                  <span className="hightlight">Chào bạn,</span>{' '}
+                  <span className="d-block d-sm-block d-md-block" />{' '}
+                  <span className="hightlight">mình là Bình An</span>
                 </h1>
                 <p>
-                  I moved to the Ho Chi Minh City in 2007 and became a web tailor since 2011
+                  Tiếp xúc với lập trình web thông qua đề tài tốt nghiệp từ năm
+                  2011, mình bắt đầu yêu thích và bén duyên với cái nghề làm
+                  web. Những sản phẩm mình làm chưa hẳn là hoàn hảo, nhưng chí
+                  ít cũng chỉnh chu và đem đến sự tự tin nhất định khi nói đó là
+                  sản phẩm do mình làm ra. Dù là website nhỏ hay lớn, ứng dụng
+                  web phức tạp được xây hàng chục năm, hay các trang landing
+                  page, mình vẫn tuân thủ các nguyên tắc:
                 </p>
-                <p>
-                  I currently work at PYCOGROUP as a Senior Frontend Developer
-                </p>
-                <p>
-                  Working on tons of projects, I believe that what makes a great website is a fascinating message, together with an immediate understanding, original content and easily traceable information
-                </p>
+                <ol>
+                  <li>
+                    <strong>Tận tâm:</strong> với khách hàng, công việc
+                  </li>
+                  <li>
+                    <strong>Tận tình:</strong> với bạn bè, đồng nghiệp, hàng xóm
+                  </li>
+                  <li>
+                    <strong>Tận tụy:</strong> trong học tập và nghiên cứu
+                  </li>
+                </ol>
                 <Call />
               </div>
             </div>
             <div className="hero-figure anime-element">
               <Reveal effect="animateMyImage">
                 <div className="my-image">
-                  <img src="/images/my-image.jpg" alt="coder, designer, photographer, website, wordpress, frontend" />
+                  <img
+                    src="/images/my-image.jpg"
+                    alt="coder, designer, photographer, website, wordpress, frontend"
+                  />
                 </div>
               </Reveal>
               <Reveal effect="animateBox1">
-							  <div className="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>              
+                <div
+                  className="hero-figure-box hero-figure-box-01"
+                  data-rotation="45deg"
+                />
               </Reveal>
               <Reveal effect="animateBox2">
-							  <div className="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                <div
+                  className="hero-figure-box hero-figure-box-02"
+                  data-rotation="-45deg"
+                />
               </Reveal>
-							<div className="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
-							<div className="hero-figure-box hero-figure-box-04" data-rotation="-135deg" ></div>
+              <div
+                className="hero-figure-box hero-figure-box-03"
+                data-rotation="0deg"
+              />
+              <div
+                className="hero-figure-box hero-figure-box-04"
+                data-rotation="-135deg"
+              />
               <Reveal effect="animateBox5">
-							  <div className="hero-figure-box hero-figure-box-05"></div>
+                <div className="hero-figure-box hero-figure-box-05" />
               </Reveal>
               <Reveal effect="animateBox2">
-							  <div className="hero-figure-box hero-figure-box-06" ></div>
+                <div className="hero-figure-box hero-figure-box-06" />
               </Reveal>
-							<div className="hero-figure-box hero-figure-box-07" ></div>
-						</div>
+              <div className="hero-figure-box hero-figure-box-07" />
+            </div>
           </SectionTop>
         </Element>
         <Element name="testimonySection">
-          <SectionTestimony>
+          <SectionTestimony style={{ display: 'none' }}>
             <SectionTestimonyInner>
-              <div id="testimonyId" className="container" style={{ position: 'relative' }}>
+              <div
+                id="testimonyId"
+                className="container"
+                style={{ position: 'relative' }}
+              >
                 <StyledBoxTitle>What other people think of me</StyledBoxTitle>
                 <div className="container">
                   <div className="row">
                     <div className="col-12 col-sm-7 col-md-7">
                       <Fade when={appearIn} right distance="50px">
                         <div className="testimonial transform">
-                          <div
-                            className="testimonials-content"
-                          >
+                          <div className="testimonials-content">
                             <blockquote>
-                            Feel like he spread the positive energy to people around
+                              Feel like he spread the positive energy to people
+                              around
                             </blockquote>
                           </div>
                           <div className="testimonials-meta">
@@ -273,11 +286,10 @@ class Home extends React.Component {
                       </Fade>
                       <Fade when={appearIn} left distance="50px" delay={400}>
                         <div className="testimonial">
-                          <div
-                            className="testimonials-content"
-                          >
+                          <div className="testimonials-content">
                             <blockquote>
-                              You're one of the best coworkers we have ever worked with
+                              You're one of the best coworkers we have ever
+                              worked with
                             </blockquote>
                           </div>
                           <div className="testimonials-meta">
@@ -288,12 +300,8 @@ class Home extends React.Component {
                       </Fade>
                       <Fade when={appearIn} right distance="50px" delay={400}>
                         <div className="testimonial transform">
-                          <div
-                            className="testimonials-content"
-                          >
-                            <blockquote>
-                            You are the inspirer
-                            </blockquote>
+                          <div className="testimonials-content">
+                            <blockquote>You are the inspirer</blockquote>
                           </div>
                           <div className="testimonials-meta">
                             <p className="testimonials-name">Dang Huy Minh</p>
@@ -303,12 +311,8 @@ class Home extends React.Component {
                       </Fade>
                       <Fade when={appearIn} left distance="50px" delay={400}>
                         <div className="testimonial transform">
-                          <div
-                            className="testimonials-content"
-                          >
-                            <blockquote>
-                            The best newcomer
-                            </blockquote>
+                          <div className="testimonials-content">
+                            <blockquote>The best newcomer</blockquote>
                           </div>
                           <div className="testimonials-meta">
                             <p className="testimonials-name">Vo Tan Phong</p>
@@ -330,9 +334,9 @@ class Home extends React.Component {
               <div className="row">
                 <div className="col-8 col-sm-6 col-md-6 offset-2 offset-sm-4 offset-md-3">
                   <SectionHeaderWork>
-                    <h2 className="display-3">Work</h2>
+                    <h2 className="display-3">Sản phẩm đã thực hiện</h2>
                     <p className="lead">
-                      Not perfect, but work
+                      Website, landing page đã thiết kế, hoàn thiện
                     </p>
                   </SectionHeaderWork>
                 </div>
@@ -343,9 +347,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/screen-shot-website-platformio.jpg" title="Screenshot website Infinito Blockchains Platform" alt="Screenshot website Infinito Blockchains Platform" />
+                      <img
+                        src="/images/screen-shot-website-platformio.jpg"
+                        title="Screenshot website Infinito Blockchains Platform"
+                        alt="Screenshot website Infinito Blockchains Platform"
+                      />
                     </div>
-                    <a href="https://platform.infinito.io/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Infinito Blockchains Platform">Infinito Blockchains Platform</a>
+                    <a
+                      href="https://platform.infinito.io/"
+                      className="title"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Website Infinito Blockchains Platform"
+                    >
+                      Infinito Blockchains Platform
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -353,11 +369,13 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/brochure-wifi-3.jpg" title="Brochure wifi marketing 3.0" alt="Brochure wifi marketing 3.0" />
+                      <img
+                        src="/images/brochure-wifi-3.jpg"
+                        title="Brochure wifi marketing 3.0"
+                        alt="Brochure wifi marketing 3.0"
+                      />
                     </div>
-                    <span className="title">
-                    Brochure wifi marketing 3.0
-                    </span>
+                    <span className="title">Brochure wifi marketing 3.0</span>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -365,9 +383,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/screen-shot-ngoc-ha-jade-river.jpg" title="Screenshot Website doanh nghiệp Ngoc Ha Jade River" alt="Screenshot Website doanh nghiệp Ngoc Ha Jade River" />
+                      <img
+                        src="/images/screen-shot-ngoc-ha-jade-river.jpg"
+                        title="Screenshot Website doanh nghiệp Ngoc Ha Jade River"
+                        alt="Screenshot Website doanh nghiệp Ngoc Ha Jade River"
+                      />
                     </div>
-                    <a href="http://ngochajaderiver.com/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Ngoc Ha Jade River">Website Ngoc Ha Jade River</a>
+                    <a
+                      href="http://ngochajaderiver.com/"
+                      className="title"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Website Ngoc Ha Jade River"
+                    >
+                      Website Ngoc Ha Jade River
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -375,9 +405,18 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/bachkhoa.jpg" title="Brochure công ty TNHH giải pháp tin học Bách Khoa" alt="Brochure công ty TNHH giải pháp tin học Bách Khoa" />
+                      <img
+                        src="/images/bachkhoa.jpg"
+                        title="Brochure công ty TNHH giải pháp tin học Bách Khoa"
+                        alt="Brochure công ty TNHH giải pháp tin học Bách Khoa"
+                      />
                     </div>
-                    <span className="title" aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa">Brochure công ty Bách Khoa</span>
+                    <span
+                      className="title"
+                      aria-label="Brochure công ty TNHH giải pháp tin học Bách Khoa"
+                    >
+                      Brochure công ty Bách Khoa
+                    </span>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -385,9 +424,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/bellow-photobooth.jpg" title="Screenshot website doanh nghiệp bellow photobooth" alt="Screenshot website doanh nghiệp bellow photobooth" />
+                      <img
+                        src="/images/bellow-photobooth.jpg"
+                        title="Screenshot website doanh nghiệp bellow photobooth"
+                        alt="Screenshot website doanh nghiệp bellow photobooth"
+                      />
                     </div>
-                    <a href="http://bellowphotobooth.com/vi/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Photobooth">Website Bellow Photobooth</a>
+                    <a
+                      href="http://bellowphotobooth.com/vi/"
+                      className="title"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Website Bellow Photobooth"
+                    >
+                      Website Bellow Photobooth
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -395,9 +446,18 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/chat.jpg" title="Screenshot website Chất Production" alt="Screenshot website Chất Production" />
+                      <img
+                        src="/images/chat.jpg"
+                        title="Screenshot website Chất Production"
+                        alt="Screenshot website Chất Production"
+                      />
                     </div>
-                    <span className="title" aria-label="Website Chất Production">Website Chất Production</span>
+                    <span
+                      className="title"
+                      aria-label="Website Chất Production"
+                    >
+                      Website Chất Production
+                    </span>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -405,9 +465,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/drill-inc.jpg" title="Screenshot website doanh nghiệp drill-inc" alt="Screenshot website doanh nghiệp drill-inc"/>
+                      <img
+                        src="/images/drill-inc.jpg"
+                        title="Screenshot website doanh nghiệp drill-inc"
+                        alt="Screenshot website doanh nghiệp drill-inc"
+                      />
                     </div>
-                    <a href="http://www.drill-inc.jp/" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Bellow Drill-inc">Website Bellow Drill-inc</a>
+                    <a
+                      href="http://www.drill-inc.jp/"
+                      className="title"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Website Bellow Drill-inc"
+                    >
+                      Website Bellow Drill-inc
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -415,9 +487,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/tipit-screenshot.jpg" title="Screenshot website doanh nghiệp Tipit" alt="Screenshot website doanh nghiệp Tipit"/>
+                      <img
+                        src="/images/tipit-screenshot.jpg"
+                        title="Screenshot website doanh nghiệp Tipit"
+                        alt="Screenshot website doanh nghiệp Tipit"
+                      />
                     </div>
-                    <a href="https://tipit.vn/" rel="noopener noreferrer" target="_blank" className="title" aria-label="Website Tipit.vn">Website Tipit.vn</a>
+                    <a
+                      href="https://tipit.vn/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="title"
+                      aria-label="Website Tipit.vn"
+                    >
+                      Website Tipit.vn
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -425,9 +509,21 @@ class Home extends React.Component {
                 <Reveal effect="fadeInUp">
                   <div>
                     <div>
-                      <img src="/images/tuonglai-foods.jpg" title="Screenshot Website doanh nghiệp Tương Lai foods" alt="Screenshot Website doanh nghiệp Tương Lai foods"/>
+                      <img
+                        src="/images/tuonglai-foods.jpg"
+                        title="Screenshot Website doanh nghiệp Tương Lai foods"
+                        alt="Screenshot Website doanh nghiệp Tương Lai foods"
+                      />
                     </div>
-                    <a href="http://tuonglaifoods.vn" className="title" rel="noopener noreferrer" target="_blank" aria-label="Website Tương Lai foods">Website Tương Lai foods</a>
+                    <a
+                      href="http://tuonglaifoods.vn"
+                      className="title"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Website Tương Lai foods"
+                    >
+                      Website Tương Lai foods
+                    </a>
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -439,61 +535,91 @@ class Home extends React.Component {
             <StyledBlogTitle>Blog</StyledBlogTitle>
             <BlogInner>
               <p className="lead">
-                Since 2017, after 3 years working with WordPress, I feel out of date with lastest trend of web, to teach myself and others who have difficulty to keep update with modern web development, I start to write a blog, hopefully, it can bring knowledge to Vietnam student who has trouble looking for the resource in Vietnamese. And now it becomes a hobby for every weekend
+                Góc chia sẽ kiến thức lập trình web đến với các lập trình viên
+                Việt Nam, cập nhập xu hướng, kinh nghiệm và các thủ thuật trong
+                lập trình web
               </p>
               <div className="container">
                 <div className="media">
                   <div className="media-body">
                     <h5>
-                      <a href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Thiết kế tuyệt đẹp vs. Thực tế: bài học từ Facebook
                       </a>
                     </h5>
                     <p>
-                      Bài viết dịch lại của một anh làm product design cho facebook đăng tải trên medium
+                      Bài viết dịch lại của một anh làm product design cho
+                      facebook đăng tải trên medium
                     </p>
                   </div>
                 </div>
                 <div className="media">
                   <div className="media-body">
                     <h5>
-                      <a href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Wordpress vs Static site
                       </a>
                     </h5>
                     <p>
-                      Chúng ta cùng nhau điểm qua cái hay, cái dở của từng thằng để nghiền ngẫm xem nó phù hợp trong trường hợp nào.
+                      Chúng ta cùng nhau điểm qua cái hay, cái dở của từng thằng
+                      để nghiền ngẫm xem nó phù hợp trong trường hợp nào.
                     </p>
                   </div>
                 </div>
                 <div className="media">
                   <div className="media-body">
                     <h5>
-                      <a href="https://luubinhan.github.io/blog/2017-10-20-react-lifecycle-la-gi/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://luubinhan.github.io/blog/2017-10-20-react-lifecycle-la-gi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Giải thích React Component Lifecycle
                       </a>
                     </h5>
                     <p>
-                      Tìm hiểu vòng đời của một Component React, khi nào và sử dụng ra sao
+                      Tìm hiểu vòng đời của một Component React, khi nào và sử
+                      dụng ra sao
                     </p>
                   </div>
                 </div>
                 <div className="media">
                   <div className="media-body">
                     <h5>
-                      <a href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         FrontEnd Developer 2016 thì nên học cái gì?
                       </a>
                     </h5>
                     <p>
-                      Hey mình có dự án mới về web, không code web lâu quá rồi, không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ là frontend developer, nhưng bạn đã tìm đúng người rồi đó, mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học gì để tạo web apps
+                      Hey mình có dự án mới về web, không code web lâu quá rồi,
+                      không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ
+                      là frontend developer, nhưng bạn đã tìm đúng người rồi đó,
+                      mình làm web cũng đã lâu, mình có thể chỉ bạn biết cần học
+                      gì để tạo web apps
                     </p>
                   </div>
                 </div>
               </div>
               <div className="text-center">
-                <a className="button btn-primary btn-lg" href="https://luubinhan.github.io/blog/" target="_blank" rel="noopener noreferrer">
-                  Click to see more
+                <a
+                  className="button btn-primary btn-lg"
+                  href="https://luubinhan.github.io/blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Xem tiếp
                 </a>
               </div>
             </BlogInner>

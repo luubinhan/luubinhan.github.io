@@ -25,8 +25,7 @@ const Footer = props => (
                 </a>
               </li>
               <li className="copyright">
-                All rights reserved
-                ©
+                Thiết kế và hoàn thiện bởi
                 {' '}
                 {new Date().getFullYear()}
                 {' '}

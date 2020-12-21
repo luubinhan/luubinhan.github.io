@@ -1,21 +1,18 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-const Call = props => (
+const Call = () => (
   <div className="call">
     <div className="call-box-top">
       <div className="call-box">
-        <span className="label">Skype: </span>
-        <a href="skype:luu.binh.an?chat">luu.binh.an</a>
+        <a className="label" href="skype:luu.binh.an?chat">Skype</a>
       </div>
       <div className="call-box">
-        <span className="label">Zalo: </span>
-        <span>luubinhan</span>
+        <a className="label" href="https://zalo.me/0943870301">Zalo</a>
       </div>
       <div className="call-box">
-        <span className="label">Email: </span>
-        <a href="mailto:luubinhan1989@gmail.com">
-        luubinhan1989@gmail.com
+        <a className="label" href="mailto:luubinhan1989@gmail.com">
+          Email
         </a>
       </div>
     </div>
