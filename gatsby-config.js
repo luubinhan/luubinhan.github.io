@@ -61,6 +61,7 @@ module.exports = {
         background_color: '#202230',
         theme_color: '#38adba',
         display: 'standalone',
+        icon: 'src/images/logo-mobile.svg',
       },
     },
     {
