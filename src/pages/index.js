@@ -542,7 +542,7 @@ class Home extends React.Component {
               <div className="container">
                 <div className="media">
                   <div className="media-body">
-                    <h5>
+                    <h3>
                       <a
                         href="https://luubinhan.github.io/blog/2017-10-03-thiet-ke-an-tuong-vs-thiet-ke-thuc-te-bai-hoc-thuc-te"
                         target="_blank"
@@ -550,7 +550,7 @@ class Home extends React.Component {
                       >
                         Thiết kế tuyệt đẹp vs. Thực tế: bài học từ Facebook
                       </a>
-                    </h5>
+                    </h3>
                     <p>
                       Bài viết dịch lại của một anh làm product design cho
                       facebook đăng tải trên medium
@@ -559,7 +559,7 @@ class Home extends React.Component {
                 </div>
                 <div className="media">
                   <div className="media-body">
-                    <h5>
+                    <h3>
                       <a
                         href="https://luubinhan.github.io/blog/2019-02-17-danh-gia-wordpress-va-static-site/"
                         target="_blank"
@@ -567,7 +567,7 @@ class Home extends React.Component {
                       >
                         Wordpress vs Static site
                       </a>
-                    </h5>
+                    </h3>
                     <p>
                       Chúng ta cùng nhau điểm qua cái hay, cái dở của từng thằng
                       để nghiền ngẫm xem nó phù hợp trong trường hợp nào.
@@ -576,7 +576,7 @@ class Home extends React.Component {
                 </div>
                 <div className="media">
                   <div className="media-body">
-                    <h5>
+                    <h3>
                       <a
                         href="https://luubinhan.github.io/blog/2017-10-20-react-lifecycle-la-gi/"
                         target="_blank"
@@ -584,7 +584,7 @@ class Home extends React.Component {
                       >
                         Giải thích React Component Lifecycle
                       </a>
-                    </h5>
+                    </h3>
                     <p>
                       Tìm hiểu vòng đời của một Component React, khi nào và sử
                       dụng ra sao
@@ -593,7 +593,7 @@ class Home extends React.Component {
                 </div>
                 <div className="media">
                   <div className="media-body">
-                    <h5>
+                    <h3>
                       <a
                         href="https://luubinhan.github.io/blog/2016-04-12-front-end-developer-2016-nen-hoc-gi"
                         target="_blank"
@@ -601,7 +601,7 @@ class Home extends React.Component {
                       >
                         FrontEnd Developer 2016 thì nên học cái gì?
                       </a>
-                    </h5>
+                    </h3>
                     <p>
                       Hey mình có dự án mới về web, không code web lâu quá rồi,
                       không biết bây giờ viết web thì nên làm bằng gì? Mình chỉ
