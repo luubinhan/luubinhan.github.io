@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Scroll from 'react-scroll';
@@ -19,6 +18,7 @@ import Footer from '../components/Footer';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
+import Hello from '../components/Hello';
 import '../scss/style.scss';
 
 const {
@@ -191,19 +191,9 @@ class Home extends React.Component {
           <SectionTop>
             <div className="intro pb-4">
               <div className="container">
-                <h1>
-                  <span className="hightlight">Chào bạn,</span>{' '}
-                  <span className="d-block d-sm-block d-md-block" />{' '}
-                  <span className="hightlight">mình là Bình An</span>
-                </h1>
+                <Hello />
                 <p>
-                  Tiếp xúc với lập trình web thông qua đề tài tốt nghiệp từ năm
-                  2011, mình bắt đầu yêu thích và bén duyên với cái nghề làm
-                  web. Những sản phẩm mình làm chưa hẳn là hoàn hảo, nhưng chí
-                  ít cũng chỉnh chu và đem đến sự tự tin nhất định khi nói đó là
-                  sản phẩm do mình làm ra. Dù là website nhỏ hay lớn, ứng dụng
-                  web phức tạp được xây hàng chục năm, hay các trang landing
-                  page, mình vẫn tuân thủ các nguyên tắc:
+                  Ngắn gọn về mình:
                 </p>
                 <ol>
                   <li>
@@ -430,15 +420,7 @@ class Home extends React.Component {
                         alt="Screenshot website doanh nghiệp bellow photobooth"
                       />
                     </div>
-                    <a
-                      href="http://bellowphotobooth.com/vi/"
-                      className="title"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="Website Bellow Photobooth"
-                    >
-                      Website Bellow Photobooth
-                    </a>
+                    Website Bellow Photobooth
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -471,15 +453,7 @@ class Home extends React.Component {
                         alt="Screenshot website doanh nghiệp drill-inc"
                       />
                     </div>
-                    <a
-                      href="http://www.drill-inc.jp/"
-                      className="title"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="Website Bellow Drill-inc"
-                    >
-                      Website Bellow Drill-inc
-                    </a>
+                    Website Bellow Drill-inc
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -493,15 +467,7 @@ class Home extends React.Component {
                         alt="Screenshot website doanh nghiệp Tipit"
                       />
                     </div>
-                    <a
-                      href="https://tipit.vn/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="title"
-                      aria-label="Website Tipit.vn"
-                    >
-                      Website Tipit.vn
-                    </a>
+                    Website Tipit.vn
                   </div>
                 </Reveal>
               </StyledWorkItem>
@@ -515,15 +481,7 @@ class Home extends React.Component {
                         alt="Screenshot Website doanh nghiệp Tương Lai foods"
                       />
                     </div>
-                    <a
-                      href="http://tuonglaifoods.vn"
-                      className="title"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="Website Tương Lai foods"
-                    >
-                      Website Tương Lai foods
-                    </a>
+                    Website Tương Lai foods
                   </div>
                 </Reveal>
               </StyledWorkItem>
