@@ -144,7 +144,7 @@ const Hello = () => (
                     cx="325"
                     cy="260"
                     r="20"
-                    fill="#FF5851"
+                    fill="#09a6b6"
                     stroke="none"
                 />
 
@@ -153,7 +153,7 @@ const Hello = () => (
                     y1="260"
                     x2="325"
                     y2="260"
-                    stroke="#FF5851"
+                    stroke="#09a6b6"
                     className="red-dot"
                 />
             </g>

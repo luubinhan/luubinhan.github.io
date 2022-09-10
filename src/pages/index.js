@@ -115,10 +115,6 @@ class Home extends React.Component {
                 duration={500}
               >
                 <img height="50" alt="Luckyluu Homepage" src={logoMobile} />
-                <span className="brand-name">
-                  lucky
-                  <span>luu</span>
-                </span>
               </Link>
             </div>
             <div className="logo-mobile">
@@ -130,10 +126,6 @@ class Home extends React.Component {
                 duration={500}
               >
                 <img height="30" alt="Luckyluu Homepage" src={logoMobile} />
-                <span className="brand-name">
-                  lucky
-                  <span>luu</span>
-                </span>
               </Link>
             </div>
             <div id="main-menu" className="main-menu">
@@ -169,7 +161,7 @@ class Home extends React.Component {
                     smooth
                     duration={500}
                   >
-                    Trang blog
+                    Blog
                   </Link>
                 </li>
                 <li className="contact-nav">

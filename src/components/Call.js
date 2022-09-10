@@ -8,9 +8,6 @@ const Call = () => (
         <a className="label" href="skype:luu.binh.an?chat">Skype</a>
       </div>
       <div className="call-box">
-        <a className="label" href="https://zalo.me/0943870301">Zalo</a>
-      </div>
-      <div className="call-box">
         <a className="label" href="mailto:luubinhan1989@gmail.com">
           Email
         </a>
