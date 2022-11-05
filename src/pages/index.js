@@ -184,7 +184,7 @@ class Home extends React.Component {
             <div className="intro pb-4">
               <div className="container">
                 <Hello />
-                
+
                 <div class="badges-container mb-4">
                   <a href='https://www.credly.com/earner/earned/badge/eb0702a5-4877-4680-9d42-71c8e10e72db' rel="noopener noreferrer" target="_blank">
                     <img width="80" src="https://images.credly.com/size/110x110/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="" />
@@ -194,6 +194,9 @@ class Home extends React.Component {
                   </a>
                   <a href='https://www.credly.com/earner/earned/badge/eb01016a-24ab-4338-b596-014ba079ed0f' rel="noopener noreferrer" target="_blank">
                     <img width="80" src="https://images.credly.com/size/110x110/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png" alt="" />
+                  </a>
+                  <a href='https://www.credly.com/earner/earned/badge/abfe16df-64bf-4b22-af5d-2f45f2400e2f' rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="" />
                   </a>
                 </div>
                 <p>
