@@ -198,6 +198,9 @@ class Home extends React.Component {
                   <a href='https://www.credly.com/earner/earned/badge/abfe16df-64bf-4b22-af5d-2f45f2400e2f' rel="noopener noreferrer" target="_blank">
                     <img width="80" src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="" />
                   </a>
+                  <a href='https://www.credly.com/badges/10914a05-6c15-425c-a114-bd7d48b330e9/' rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="" />
+                  </a>
                 </div>
                 <p>
                   Ngắn gọn về mình:

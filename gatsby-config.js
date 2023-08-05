@@ -53,18 +53,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'luubinhan.github.io',
-        short_name: 'luckyluu',
-        start_url: '/',
-        background_color: '#202230',
-        theme_color: '#38adba',
-        display: 'standalone',
-        icon: 'src/images/logo-mobile.svg',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: guid || 'UA-29685098-2',
