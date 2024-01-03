@@ -242,7 +242,7 @@ class Home extends React.Component {
               <Reveal effect="animateMyImage">
                 <div className="my-image">
                   <img
-                    src="/images/my-image.jpg"
+                    src="/images/my-image.avif"
                     alt="coder, designer, photographer, website, wordpress, frontend"
                   />
                 </div>
@@ -278,44 +278,39 @@ class Home extends React.Component {
           </SectionTop>
         </Element>
         <Element name="khoa-hoc-html-css-can-ban">
-          <div
-            id="khoa-hoc-html-css-can-ban"
-            className="container"
-          >
-            <div className="container">
-              <SectionCourse>
-                <div
-                  className="hero-figure-box hero-figure-box-01"
-                  data-rotation="45deg"
-                />
-                <div className="row align-items-center">
-                  <div className="col-6">
-                    <Reveal effect="fadeInUp">
-                      <img
-                        src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.jpg"
-                        title="Cover khóa học html css căn bản cho người mới bắt đầu"
-                        alt="Cover khóa học html css căn bản cho người mới bắt đầu"
-                      />
-                    </Reveal>
-                  </div>
-                  <div className="col-6">
-                    <SectionHeaderWork>
-                      <h2 className="display-3">Khóa học HTML/CSS</h2>
-                      <p className="lead">
-                        Căn bản dành cho người mới bắt đầu học frontend do mình thực hiện, sẽ giúp các bạn có
-                      </p>
-                      <div>
-                        <ul>
-                          <li>Đủ <strong>tự tin</strong> để làm việc với html css</li>
-                          <li>Đủ <strong>nền tảng</strong> để bạn tiếp tục học tiếp những kiến thức cao hơn của frontend</li>
-                          <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
-                        </ul>
-                      </div>
-                    </SectionHeaderWork>
-                  </div>
+          <div className="container">
+            <SectionCourse>
+              <div
+                className="hero-figure-box hero-figure-box-01"
+                data-rotation="45deg"
+              />
+              <div className="row align-items-center">
+                <div className="col-12 col-md-6">
+                  <Reveal effect="fadeInUp">
+                    <img
+                      src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.avif"
+                      title="Cover khóa học html css căn bản cho người mới bắt đầu"
+                      alt="Cover khóa học html css căn bản cho người mới bắt đầu"
+                    />
+                  </Reveal>
                 </div>
-              </SectionCourse>
-            </div>
+                <div className="col-12 col-lg-6">
+                  <SectionHeaderWork>
+                    <h2 className="display-3">Khóa học HTML/CSS</h2>
+                    <p className="lead">
+                      Căn bản dành cho người mới bắt đầu học frontend do mình thực hiện, sẽ giúp các bạn có
+                    </p>
+                    <div>
+                      <ul>
+                        <li>Đủ <strong>tự tin</strong> để làm việc với html css</li>
+                        <li>Đủ <strong>nền tảng</strong> để bạn tiếp tục học tiếp những kiến thức cao hơn của frontend</li>
+                        <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
+                      </ul>
+                    </div>
+                  </SectionHeaderWork>
+                </div>
+              </div>
+            </SectionCourse>
           </div>
         </Element>
         <Element name="testimonySection">
@@ -408,7 +403,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/screen-shot-website-platformio.jpg"
+                        src="/images/screen-shot-website-platformio.avif"
                         title="Screenshot website Infinito Blockchains Platform"
                         alt="Screenshot website Infinito Blockchains Platform"
                       />
@@ -430,7 +425,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/brochure-wifi-3.jpg"
+                        src="/images/brochure-wifi-3.avif"
                         title="Brochure wifi marketing 3.0"
                         alt="Brochure wifi marketing 3.0"
                       />
@@ -444,7 +439,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/screen-shot-ngoc-ha-jade-river.jpg"
+                        src="/images/screen-shot-ngoc-ha-jade-river.avif"
                         title="Screenshot Website doanh nghiệp Ngoc Ha Jade River"
                         alt="Screenshot Website doanh nghiệp Ngoc Ha Jade River"
                       />
@@ -466,7 +461,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/bachkhoa.jpg"
+                        src="/images/bachkhoa.avif"
                         title="Brochure công ty TNHH giải pháp tin học Bách Khoa"
                         alt="Brochure công ty TNHH giải pháp tin học Bách Khoa"
                       />
@@ -485,7 +480,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/bellow-photobooth.jpg"
+                        src="/images/bellow-photobooth.avif"
                         title="Screenshot website doanh nghiệp bellow photobooth"
                         alt="Screenshot website doanh nghiệp bellow photobooth"
                       />
@@ -499,7 +494,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/chat.jpg"
+                        src="/images/chat.avif"
                         title="Screenshot website Chất Production"
                         alt="Screenshot website Chất Production"
                       />
@@ -518,7 +513,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/drill-inc.jpg"
+                        src="/images/drill-inc.avif"
                         title="Screenshot website doanh nghiệp drill-inc"
                         alt="Screenshot website doanh nghiệp drill-inc"
                       />
@@ -532,7 +527,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/tipit-screenshot.jpg"
+                        src="/images/tipit-screenshot.avif"
                         title="Screenshot website doanh nghiệp Tipit"
                         alt="Screenshot website doanh nghiệp Tipit"
                       />
@@ -546,7 +541,7 @@ class Home extends React.Component {
                   <div>
                     <div>
                       <img
-                        src="/images/tuonglai-foods.jpg"
+                        src="/images/tuonglai-foods.avif"
                         title="Screenshot Website doanh nghiệp Tương Lai foods"
                         alt="Screenshot Website doanh nghiệp Tương Lai foods"
                       />
