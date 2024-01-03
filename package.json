@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "Luu Binh An <luubinhan1989@gmail.com>",
   "license": "MIT",
-  "engines" : { 
-    "node" : "^12.19.0"
+  "engines": {
+    "node": "^12.19.0"
   },
   "scripts": {
     "develop": "gatsby develop",
