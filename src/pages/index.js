@@ -134,6 +134,17 @@ class Home extends React.Component {
                 <li>
                   <Link
                     activeClass="active"
+                    to="khoa-hoc-html-css-can-ban"
+                    spy
+                    smooth
+                    duration={500}
+                  >
+                    Khóa học HTML/CSS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
                     to="workSection"
                     spy
                     smooth
@@ -186,21 +197,21 @@ class Home extends React.Component {
               <div className="container">
                 <Hello />
 
-                <div class="badges-container mb-4">
-                  <a href='https://www.credly.com/earner/earned/badge/eb0702a5-4877-4680-9d42-71c8e10e72db' rel="noopener noreferrer" target="_blank">
-                    <img width="80" src="https://images.credly.com/size/110x110/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="" />
+                <div className="badges-container mb-4">
+                  <a href="https://www.credly.com/earner/earned/badge/eb0702a5-4877-4680-9d42-71c8e10e72db" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/size/110x110/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="PSM I Certificate" />
                   </a>
-                  <a href='https://www.credly.com/earner/earned/badge/b287be6b-c644-4495-a9ea-b9f3cc81d24a' rel="noopener noreferrer" target="_blank">
-                    <img width="80" src="https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="" />
+                  <a href="https://www.credly.com/earner/earned/badge/b287be6b-c644-4495-a9ea-b9f3cc81d24a" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner Certificate" />
                   </a>
-                  <a href='https://www.credly.com/earner/earned/badge/eb01016a-24ab-4338-b596-014ba079ed0f' rel="noopener noreferrer" target="_blank">
-                    <img width="80" src="https://images.credly.com/size/110x110/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png" alt="" />
+                  <a href="https://www.credly.com/earner/earned/badge/eb01016a-24ab-4338-b596-014ba079ed0f" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/size/110x110/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png" alt="AWS Developer Associate Certificate" />
                   </a>
-                  <a href='https://www.credly.com/earner/earned/badge/abfe16df-64bf-4b22-af5d-2f45f2400e2f' rel="noopener noreferrer" target="_blank">
-                    <img width="80" src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="" />
+                  <a href="https://www.credly.com/earner/earned/badge/abfe16df-64bf-4b22-af5d-2f45f2400e2f" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Solution Architecture Associate Certificate" />
                   </a>
-                  <a href='https://www.credly.com/badges/10914a05-6c15-425c-a114-bd7d48b330e9/' rel="noopener noreferrer" target="_blank">
-                    <img width="80" src="https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="" />
+                  <a href="https://www.credly.com/badges/10914a05-6c15-425c-a114-bd7d48b330e9/" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="AWS Solution Architecture Professional Certificate" />
                   </a>
                 </div>
                 <p>
@@ -208,17 +219,22 @@ class Home extends React.Component {
                 </p>
                 <ol>
                   <li>
-                    <strong>Tận tâm:</strong> với khách hàng, công việc
+                    <strong>Tận tâm:</strong>
+                    {' '}
+                    với khách hàng, công việc
                   </li>
                   <li>
-                    <strong>Tận tình:</strong> với bạn bè, đồng nghiệp, hàng xóm
+                    <strong>Tận tình:</strong>
+                    {' '}
+                    với bạn bè, đồng nghiệp, hàng xóm
                   </li>
                   <li>
-                    <strong>Tận tụy:</strong> trong học tập và nghiên cứu
+                    <strong>Tận tụy:</strong>
+                    {' '}
+                    trong học tập và nghiên cứu
                   </li>
                 </ol>
                 <Call />
-
 
               </div>
             </div>
@@ -263,36 +279,42 @@ class Home extends React.Component {
         </Element>
         <Element name="khoa-hoc-html-css-can-ban">
           <div
-            id=""
+            id="khoa-hoc-html-css-can-ban"
             className="container"
           >
             <div className="container">
-              <div className="row align-items-center">
-                <div className="col-6">
-                  <Reveal effect="fadeInUp">
-                    <img
-                      src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.jpg"
-                      title="Cover khóa học html css căn bản cho người mới bắt đầu"
-                      alt="Cover khóa học html css căn bản cho người mới bắt đầu"
-                    />
-                  </Reveal>
+              <SectionCourse>
+                <div
+                  className="hero-figure-box hero-figure-box-01"
+                  data-rotation="45deg"
+                />
+                <div className="row align-items-center">
+                  <div className="col-6">
+                    <Reveal effect="fadeInUp">
+                      <img
+                        src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.jpg"
+                        title="Cover khóa học html css căn bản cho người mới bắt đầu"
+                        alt="Cover khóa học html css căn bản cho người mới bắt đầu"
+                      />
+                    </Reveal>
+                  </div>
+                  <div className="col-6">
+                    <SectionHeaderWork>
+                      <h2 className="display-3">Khóa học HTML/CSS</h2>
+                      <p className="lead">
+                        Căn bản dành cho người mới bắt đầu học frontend do mình thực hiện, sẽ giúp các bạn có
+                      </p>
+                      <div>
+                        <ul>
+                          <li>Đủ <strong>tự tin</strong> để làm việc với html css</li>
+                          <li>Đủ <strong>nền tảng</strong> để bạn tiếp tục học tiếp những kiến thức cao hơn của frontend</li>
+                          <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
+                        </ul>
+                      </div>
+                    </SectionHeaderWork>
+                  </div>
                 </div>
-                <div className="col-6">
-                  <SectionHeaderWork>
-                    <h2 className="display-3">Khóa học HTML/CSS</h2>
-                    <p className="lead">
-                      Căn bản dành cho người mới bắt đầu học frontend do mình thực hiện, sẽ giúp các bạn có
-                    </p>
-                    <div>
-                      <ul>
-                        <li>Đủ <strong>tự tin</strong> để làm việc với html css</li>
-                        <li>Đủ <strong>nền tảng</strong> để bạn tiếp tục học tiếp những kiến thức cao hơn của frontend</li>
-                        <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
-                      </ul>
-                    </div>
-                  </SectionHeaderWork>
-                </div>
-              </div>
+              </SectionCourse>
             </div>
           </div>
         </Element>

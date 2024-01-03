@@ -5,9 +5,9 @@ const SectionCourse = styled.div`
   &:after {
     content: "";
     height: 28rem;
-    left: 6.25vw;
+    right: 6.25vw;
     position: absolute;
-    top: 16rem;
+    top: 6rem;
     width: 18.75vw;
     display: block;
     background: url("/dot.svg") center top / contain repeat-y;
@@ -15,11 +15,15 @@ const SectionCourse = styled.div`
   &:before {
     content: "";
     height: 16rem;
-    left: 14.275vw;
+    right: 20vw;
     position: absolute;
-    top: 0px;
+    top: -12rem;
     width: 2px;
     background: rgb(136, 136, 136);
+  }
+
+  .hero-figure-box-01 {
+    left: -8rem;
   }
 `;
 
