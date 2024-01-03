@@ -14,6 +14,7 @@ import SectionWork from '../components/styled/SectionWork';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
 import SectionTestimony from '../components/styled/SectionTestimony';
 import SectionTop from '../components/styled/SectionTop';
+import SectionCourse from '../components/styled/SectionCourse';
 import Footer from '../components/Footer';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
@@ -259,6 +260,41 @@ class Home extends React.Component {
               <div className="hero-figure-box hero-figure-box-07" />
             </div>
           </SectionTop>
+        </Element>
+        <Element name="khoa-hoc-html-css-can-ban">
+          <div
+            id=""
+            className="container"
+          >
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-6">
+                  <Reveal effect="fadeInUp">
+                    <img
+                      src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.jpg"
+                      title="Cover khóa học html css căn bản cho người mới bắt đầu"
+                      alt="Cover khóa học html css căn bản cho người mới bắt đầu"
+                    />
+                  </Reveal>
+                </div>
+                <div className="col-6">
+                  <SectionHeaderWork>
+                    <h2 className="display-3">Khóa học HTML/CSS</h2>
+                    <p className="lead">
+                      Căn bản dành cho người mới bắt đầu học frontend do mình thực hiện, sẽ giúp các bạn có
+                    </p>
+                    <div>
+                      <ul>
+                        <li>Đủ <strong>tự tin</strong> để làm việc với html css</li>
+                        <li>Đủ <strong>nền tảng</strong> để bạn tiếp tục học tiếp những kiến thức cao hơn của frontend</li>
+                        <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
+                      </ul>
+                    </div>
+                  </SectionHeaderWork>
+                </div>
+              </div>
+            </div>
+          </div>
         </Element>
         <Element name="testimonySection">
           <SectionTestimony style={{ display: 'none' }}>
