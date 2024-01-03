@@ -4,7 +4,7 @@
   "author": "Luu Binh An <luubinhan1989@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "^12.19.0"
+    "node": "14.9.0"
   },
   "scripts": {
     "develop": "gatsby develop",
