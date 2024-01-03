@@ -287,11 +287,13 @@ class Home extends React.Component {
               <div className="row align-items-center">
                 <div className="col-12 col-md-6">
                   <Reveal effect="fadeInUp">
-                    <img
-                      src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.avif"
-                      title="Cover khóa học html css căn bản cho người mới bắt đầu"
-                      alt="Cover khóa học html css căn bản cho người mới bắt đầu"
-                    />
+                    <a href="https://www.udemy.com/course/html-css-can-ban-danh-cho-nguoi-moi-bat-au-lap-trinh-web/">
+                      <img
+                        src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.avif"
+                        title="Cover khóa học html css căn bản cho người mới bắt đầu"
+                        alt="Cover khóa học html css căn bản cho người mới bắt đầu"
+                      />
+                    </a>
                   </Reveal>
                 </div>
                 <div className="col-12 col-lg-6">
@@ -307,6 +309,9 @@ class Home extends React.Component {
                         <li>Đủ <strong>thực hành</strong> để bạn thấy được giá trị của lý thuyết và khái niệm</li>
                       </ul>
                     </div>
+                    <a className="button btn-primary btn-lg" href="https://www.udemy.com/course/html-css-can-ban-danh-cho-nguoi-moi-bat-au-lap-trinh-web/">
+                      Vào xem ngay
+                    </a>
                   </SectionHeaderWork>
                 </div>
               </div>
