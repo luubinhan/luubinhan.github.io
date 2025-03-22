@@ -20,6 +20,7 @@ import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
 import Hello from '../components/Hello';
+import CourseMfe from '../sections/course-mfe';
 import '../scss/style.scss';
 
 const {
@@ -318,6 +319,7 @@ class Home extends React.Component {
             </SectionCourse>
           </div>
         </Element>
+        <CourseMfe />
         <Element name="testimonySection">
           <SectionTestimony style={{ display: 'none' }}>
             <SectionTestimonyInner>
