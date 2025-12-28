@@ -22,7 +22,16 @@ module.exports = {
     ],
   },
   plugins: [
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassOptions: {
+          includePaths: [
+            `${__dirname}/node_modules`,
+          ],
+        },
+      },
+    },
     // 'gatsby-plugin-offline', // Disabled due to compatibility issues with Node 18+
     'gatsby-transformer-json',
     'gatsby-transformer-remark',

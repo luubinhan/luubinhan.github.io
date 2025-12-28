@@ -4,15 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 // Bootstrap
-@import 'bootstrap/functions';
+@import 'bootstrap/scss/functions';
 @import 'bootstrap-variables';
-@import 'bootstrap/variables';
-@import 'bootstrap/mixins';
-@import 'bootstrap/root';
-@import 'bootstrap/reboot';
-@import 'bootstrap/grid';
-@import 'bootstrap/type';
-@import 'bootstrap/tables';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/tables';
 // @import "bootstrap/images";
 // @import "bootstrap/code";
 // @import "bootstrap/forms";
@@ -39,7 +39,7 @@
 // @import "bootstrap/popover";
 // @import "bootstrap/carousel";
 // @import "bootstrap/print";
-@import 'bootstrap/utilities';
+@import 'bootstrap/scss/utilities';
 
 // Libraries
 @import 'libraries/hamburgers/hamburgers';

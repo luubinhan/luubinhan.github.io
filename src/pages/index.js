@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Scroll from 'react-scroll';
-import SEO from '../components/SEO';
 import StyledBoxTitle from '../components/styled/StyledBoxTitle';
 import StyledWorkGroup from '../components/styled/StyledWorkGroup';
 import StyledWorkItem from '../components/styled/StyledWorkItem';
@@ -98,7 +97,6 @@ class Home extends React.Component {
     const { appearIn } = this.state;
     return (
       <div className="page-home">
-        <SEO title="Home" />
         <Helmet>
           <meta
             name="description"

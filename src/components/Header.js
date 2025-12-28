@@ -1,9 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Menu from './Menu';
-import Hamburger from './Hamburger';
 import logoMobile from '../images/logo-mobile.svg';
-import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {
   constructor(props) {
@@ -13,7 +9,7 @@ class Header extends React.Component {
     };
   }
 
-  toggleMenu = (menuActive) => {
+  toggleMenu = () => {
     this.setState(prevState => ({
       menuActive: !prevState.menuActive,
     }));
@@ -38,8 +34,6 @@ class Header extends React.Component {
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
-          <Menu />
-          <Hamburger toggleMenu={this.toggleMenu} />
         </div>
       </div>
     );
