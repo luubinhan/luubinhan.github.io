@@ -1,6 +1,6 @@
 import React from 'react';
 import Scroll from 'react-scroll';
-import Reveal from 'react-reveal/Reveal';
+import { motion } from 'framer-motion';
 import SectionCourse from '../components/styled/SectionCourse';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
 
@@ -47,7 +47,12 @@ const CourseMfe = () => (
             </SectionHeaderWork>
           </div>
           <div className="col-12 col-md-6">
-            <Reveal effect="fadeInUp">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <a href="https://www.udemy.com/course/microfrontend-danh-cho-react-developer/">
                 <img
                   src="/images/banner-khoa-hoc-micro-frontend-cho-react-developer.jpg"
@@ -55,7 +60,7 @@ const CourseMfe = () => (
                   alt="Cover Microfrontend dành cho React Developer"
                 />
               </a>
-            </Reveal>
+            </motion.div>
           </div>
         </div>
       </SectionCourse>

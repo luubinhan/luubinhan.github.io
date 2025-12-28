@@ -2,8 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Scroll from 'react-scroll';
-import Fade from 'react-reveal/Fade';
-import Reveal from 'react-reveal/Reveal';
 import SEO from '../components/SEO';
 import StyledBoxTitle from '../components/styled/StyledBoxTitle';
 import StyledWorkGroup from '../components/styled/StyledWorkGroup';
@@ -21,6 +19,7 @@ import Call from '../components/Call';
 import isInViewport from '../helpers/isInViewport';
 import Hello from '../components/Hello';
 import CourseMfe from '../sections/course-mfe';
+import AnimatedDiv from '../components/AnimatedDiv';
 import '../scss/style.scss';
 
 const {
@@ -240,26 +239,41 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="hero-figure anime-element">
-              <Reveal effect="animateMyImage">
+              <AnimatedDiv
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
                 <div className="my-image">
                   <img
                     src="/images/my-image.avif"
                     alt="coder, designer, photographer, website, wordpress, frontend"
                   />
                 </div>
-              </Reveal>
-              <Reveal effect="animateBox1">
+              </AnimatedDiv>
+              <AnimatedDiv
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
                 <div
                   className="hero-figure-box hero-figure-box-01"
                   data-rotation="45deg"
                 />
-              </Reveal>
-              <Reveal effect="animateBox2">
+              </AnimatedDiv>
+              <AnimatedDiv
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <div
                   className="hero-figure-box hero-figure-box-02"
                   data-rotation="-45deg"
                 />
-              </Reveal>
+              </AnimatedDiv>
               <div
                 className="hero-figure-box hero-figure-box-03"
                 data-rotation="0deg"
@@ -268,12 +282,22 @@ class Home extends React.Component {
                 className="hero-figure-box hero-figure-box-04"
                 data-rotation="-135deg"
               />
-              <Reveal effect="animateBox5">
+              <AnimatedDiv
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <div className="hero-figure-box hero-figure-box-05" />
-              </Reveal>
-              <Reveal effect="animateBox2">
+              </AnimatedDiv>
+              <AnimatedDiv
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
                 <div className="hero-figure-box hero-figure-box-06" />
-              </Reveal>
+              </AnimatedDiv>
               <div className="hero-figure-box hero-figure-box-07" />
             </div>
           </SectionTop>
@@ -287,7 +311,12 @@ class Home extends React.Component {
               />
               <div className="row align-items-center">
                 <div className="col-12 col-md-6">
-                  <Reveal effect="fadeInUp">
+                  <AnimatedDiv
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                  >
                     <a href="https://www.udemy.com/course/html-css-can-ban-danh-cho-nguoi-moi-bat-au-lap-trinh-web/">
                       <img
                         src="/images/cover-khoa-hoc-html-css-can-ban-cho-nguoi-moi.avif"
@@ -295,7 +324,7 @@ class Home extends React.Component {
                         alt="Cover khóa học html css căn bản cho người mới bắt đầu"
                       />
                     </a>
-                  </Reveal>
+                  </AnimatedDiv>
                 </div>
                 <div className="col-12 col-lg-6">
                   <SectionHeaderWork>
@@ -332,7 +361,11 @@ class Home extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col-12 col-sm-7 col-md-7">
-                      <Fade when={appearIn} right distance="50px">
+                      <AnimatedDiv
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                        transition={{ duration: 0.6 }}
+                      >
                         <div className="testimonial transform">
                           <div className="testimonials-content">
                             <blockquote>
@@ -345,8 +378,12 @@ class Home extends React.Component {
                             <p className="testimonials-jobtitle">Designer</p>
                           </div>
                         </div>
-                      </Fade>
-                      <Fade when={appearIn} left distance="50px" delay={400}>
+                      </AnimatedDiv>
+                      <AnimatedDiv
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                      >
                         <div className="testimonial">
                           <div className="testimonials-content">
                             <blockquote>
@@ -359,8 +396,12 @@ class Home extends React.Component {
                             <p className="testimonials-jobtitle">HR</p>
                           </div>
                         </div>
-                      </Fade>
-                      <Fade when={appearIn} right distance="50px" delay={400}>
+                      </AnimatedDiv>
+                      <AnimatedDiv
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                      >
                         <div className="testimonial transform">
                           <div className="testimonials-content">
                             <blockquote>You are the inspirer</blockquote>
@@ -370,8 +411,12 @@ class Home extends React.Component {
                             <p className="testimonials-jobtitle">Developer</p>
                           </div>
                         </div>
-                      </Fade>
-                      <Fade when={appearIn} left distance="50px" delay={400}>
+                      </AnimatedDiv>
+                      <AnimatedDiv
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                      >
                         <div className="testimonial transform">
                           <div className="testimonials-content">
                             <blockquote>The best newcomer</blockquote>
@@ -381,7 +426,7 @@ class Home extends React.Component {
                             <p className="testimonials-jobtitle">Team Leader</p>
                           </div>
                         </div>
-                      </Fade>
+                      </AnimatedDiv>
                     </div>
                   </div>
                 </div>
@@ -406,7 +451,12 @@ class Home extends React.Component {
             </div>
             <StyledWorkGroup>
               <StyledWorkItem column={2} color="#C9DC08">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -425,10 +475,15 @@ class Home extends React.Component {
                       Infinito Blockchains Platform
                     </a>
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={7} color="#00A5B4">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -439,10 +494,15 @@ class Home extends React.Component {
                     </div>
                     <span className="title">Brochure wifi marketing 3.0</span>
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={12} color="#C9DC08">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -461,10 +521,15 @@ class Home extends React.Component {
                       Website Ngoc Ha Jade River
                     </a>
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={1} color="#00A5B4">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -480,10 +545,15 @@ class Home extends React.Component {
                       Brochure công ty Bách Khoa
                     </span>
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={6} color="#C9DC08">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -494,10 +564,15 @@ class Home extends React.Component {
                     </div>
                     Website Bellow Photobooth
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={11} color="#00A5B4">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -513,10 +588,15 @@ class Home extends React.Component {
                       Website Chất Production
                     </span>
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={2} color="#C9DC08">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -527,10 +607,15 @@ class Home extends React.Component {
                     </div>
                     Website Bellow Drill-inc
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={7} color="#00A5B4">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -541,10 +626,15 @@ class Home extends React.Component {
                     </div>
                     Website Tipit.vn
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
               <StyledWorkItem column={12} color="#C9DC08">
-                <Reveal effect="fadeInUp">
+                <AnimatedDiv
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
                   <div>
                     <div>
                       <img
@@ -555,7 +645,7 @@ class Home extends React.Component {
                     </div>
                     Website Tương Lai foods
                   </div>
-                </Reveal>
+                </AnimatedDiv>
               </StyledWorkItem>
             </StyledWorkGroup>
           </SectionWork>
