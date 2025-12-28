@@ -5,10 +5,6 @@ module.exports = {
     title: 'Luu Binh An - Senior Frontend Developer & Educator',
     description: 'Senior Frontend Developer | AWS Certified Solutions Architect | Frontend Education & Mentorship',
     contact: {
-      phone: '',
-      skype: 'luu.binh.an',
-      zalo: 'luubinhan',
-      email: 'luubinhan1989@gmail.com',
     },
     menuLinks: [
       {
