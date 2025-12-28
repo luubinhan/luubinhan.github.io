@@ -2,8 +2,8 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'luubinhan.github.io',
-    description: 'Trang web cá nhân | Luu Binh An',
+    title: 'Luu Binh An - Senior Frontend Developer & Educator',
+    description: 'Senior Frontend Developer | AWS Certified Solutions Architect | Frontend Education & Mentorship',
     contact: {
       phone: '',
       skype: 'luu.binh.an',
