@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline', // Disabled due to compatibility issues with Node 18+
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
