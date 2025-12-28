@@ -1,12 +1,13 @@
+/* eslint-disable no-restricted-exports */
 import React from 'react';
 import Scroll from 'react-scroll';
-import { motion } from 'framer-motion';
 import SectionCourse from '../components/styled/SectionCourse';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
 
 const { Element } = Scroll;
 
-const CourseMfe = () => (
+function CourseMfe() {
+  return (
   <Element name="micro-frontend-for-react-developer">
     <div className="container">
       <SectionCourse>
@@ -47,25 +48,19 @@ const CourseMfe = () => (
             </SectionHeaderWork>
           </div>
           <div className="col-12 col-md-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <a href="https://www.udemy.com/course/microfrontend-danh-cho-react-developer/">
-                <img
-                  src="/images/banner-khoa-hoc-micro-frontend-cho-react-developer.jpg"
-                  title="Cover Microfrontend dành cho React Developer"
-                  alt="Cover Microfrontend dành cho React Developer"
-                />
-              </a>
-            </motion.div>
+            <a href="https://www.udemy.com/course/microfrontend-danh-cho-react-developer/">
+              <img
+                src="/images/banner-khoa-hoc-micro-frontend-cho-react-developer.jpg"
+                title="Cover Microfrontend dành cho React Developer"
+                alt="Cover Microfrontend dành cho React Developer"
+              />
+            </a>
           </div>
         </div>
       </SectionCourse>
     </div>
   </Element>
-);
+  );
+}
 
 export default CourseMfe;
