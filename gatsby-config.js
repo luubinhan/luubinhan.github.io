@@ -29,7 +29,7 @@ module.exports = {
           includePaths: [
             `${__dirname}/node_modules`,
           ],
-          silenceDeprecations: ['slash-div', 'abs-percent'],
+          silenceDeprecations: ['slash-div', 'abs-percent', 'if-function', 'lighten', 'map-merge'],
         },
       },
     },
