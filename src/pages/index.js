@@ -98,6 +98,7 @@ class Home extends React.Component {
     return (
       <div className="page-home">
         <Helmet>
+          <title>Luu Binh An - Senior Frontend Developer & Educator</title>
           <meta
             name="description"
             content="coder, designer, photographer, website, wordpress, frontend"
