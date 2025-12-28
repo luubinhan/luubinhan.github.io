@@ -74,7 +74,7 @@ class Home extends React.Component {
     });
     const { appearIn } = this.state;
     const testimonySection = document.querySelector('#testimonyId');
-    window && window.addEventListener('scroll', (event) => {
+    window && window.addEventListener('scroll', () => {
       if (isInViewport(testimonySection) && appearIn === false) {
         this.setState({ appearIn: true });
       }
