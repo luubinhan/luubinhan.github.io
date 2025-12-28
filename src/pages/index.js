@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Scroll from 'react-scroll';
 import StyledBoxTitle from '../components/styled/StyledBoxTitle';
 import StyledWorkGroup from '../components/styled/StyledWorkGroup';
-import StyledWorkItem from '../components/styled/StyledWorkItem';
+import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/styled/StyledBlogTitle';
 import SectionBlog from '../components/styled/SectionBlog';
 import SectionWork from '../components/styled/SectionWork';
@@ -453,7 +453,7 @@ class Home extends React.Component {
               </div>
             </div>
             <StyledWorkGroup>
-              <StyledWorkItem column={2} color="#C9DC08">
+              <WorkItem column={2} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -479,8 +479,8 @@ class Home extends React.Component {
                     </a>
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={7} color="#00A5B4">
+              </WorkItem>
+              <WorkItem column={7} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -498,8 +498,8 @@ class Home extends React.Component {
                     <span className="title">Brochure wifi marketing 3.0</span>
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={12} color="#C9DC08">
+              </WorkItem>
+              <WorkItem column={12} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -525,8 +525,8 @@ class Home extends React.Component {
                     </a>
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={1} color="#00A5B4">
+              </WorkItem>
+              <WorkItem column={1} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -549,8 +549,8 @@ class Home extends React.Component {
                     </span>
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={6} color="#C9DC08">
+              </WorkItem>
+              <WorkItem column={6} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -568,8 +568,8 @@ class Home extends React.Component {
                     Website Bellow Photobooth
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={11} color="#00A5B4">
+              </WorkItem>
+              <WorkItem column={11} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -592,8 +592,8 @@ class Home extends React.Component {
                     </span>
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={2} color="#C9DC08">
+              </WorkItem>
+              <WorkItem column={2} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -611,8 +611,8 @@ class Home extends React.Component {
                     Website Bellow Drill-inc
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={7} color="#00A5B4">
+              </WorkItem>
+              <WorkItem column={7} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -630,8 +630,8 @@ class Home extends React.Component {
                     Website Tipit.vn
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
-              <StyledWorkItem column={12} color="#C9DC08">
+              </WorkItem>
+              <WorkItem column={12} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -649,7 +649,7 @@ class Home extends React.Component {
                     Website Tương Lai foods
                   </div>
                 </AnimatedDiv>
-              </StyledWorkItem>
+              </WorkItem>
             </StyledWorkGroup>
           </SectionWork>
         </Element>

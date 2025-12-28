@@ -25,6 +25,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
         sassOptions: {
           includePaths: [
             `${__dirname}/node_modules`,

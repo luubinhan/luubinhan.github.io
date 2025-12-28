@@ -8,7 +8,7 @@ const StyledWorkItem = styled.div`
   @media (min-width: 768px) {
     margin-bottom: 8rem;
     margin-left: 0;
-    grid-column: ${props => props.column} / span 4;
+    grid-column: ${props => props.$column} / span 4;
   }
   &:after {
     content: "";
@@ -18,7 +18,7 @@ const StyledWorkItem = styled.div`
     bottom: -10px;
     width: 30px;
     height: 30px;
-    background-color: ${props => props.color};
+    background-color: ${props => props.$color};
     @media (min-width: 768px) {
       right: -30px;
       bottom: -10px;
