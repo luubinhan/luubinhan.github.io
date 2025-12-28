@@ -6,7 +6,7 @@ import StyledBoxTitle from '../components/styled/StyledBoxTitle';
 import StyledWorkGroup from '../components/styled/StyledWorkGroup';
 import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/styled/StyledBlogTitle';
-import SectionBlog from '../components/styled/SectionBlog';
+import SectionBlog from '../components/SectionBlog';
 import SectionWork from '../components/styled/SectionWork';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
 import SectionTestimony from '../components/styled/SectionTestimony';
