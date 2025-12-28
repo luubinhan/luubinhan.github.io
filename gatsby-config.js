@@ -49,11 +49,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: guid || 'UA-29685098-2',
-        // Puts tracking script in the head instead of the body
-        head: false,
+        trackingIds: [
+          guid || 'UA-29685098-2',
+        ],
+        pluginConfig: {
+          head: false,
+        },
       },
     },
   ],
