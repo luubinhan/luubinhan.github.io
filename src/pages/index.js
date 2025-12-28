@@ -99,6 +99,7 @@ class Home extends React.Component {
       <div className="page-home">
         <Helmet>
           <title>Luu Binh An - Senior Frontend Developer & Educator</title>
+          <link rel="icon" type="image/png" href="/favicon.png" />
           <meta
             name="description"
             content="coder, designer, photographer, website, wordpress, frontend"
