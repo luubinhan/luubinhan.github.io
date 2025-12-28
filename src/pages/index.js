@@ -213,6 +213,9 @@ class Home extends React.Component {
                   <a href="https://www.credly.com/badges/10914a05-6c15-425c-a114-bd7d48b330e9/" rel="noopener noreferrer" target="_blank">
                     <img width="80" src="https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="AWS Solution Architecture Professional Certificate" />
                   </a>
+                  <a href="https://www.credly.com/earner/earned/badge/81dc6413-a2e0-4e49-8d45-6c140fca6386" rel="noopener noreferrer" target="_blank">
+                    <img width="80" src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" alt="AWS Certified AI Practitioner" />
+                  </a>
                 </div>
                 <p>
                   Ngắn gọn về mình:
