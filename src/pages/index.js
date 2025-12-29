@@ -180,23 +180,23 @@ const Home = () => {
                   </a>
                 </div>
                 <p>
-                  Ngắn gọn về mình:
+                Ngắn gọn về bản thân
                 </p>
                 <ol>
                   <li>
                     <strong>Tận tâm:</strong>
                     {' '}
-                    với khách hàng, công việc
+                    với công việc và khách hàng.
                   </li>
                   <li>
                     <strong>Tận tình:</strong>
                     {' '}
-                    với bạn bè, đồng nghiệp, hàng xóm
+                    với bạn bè, đồng nghiệp và cộng đồng xung quanh.
                   </li>
                   <li>
                     <strong>Tận tụy:</strong>
                     {' '}
-                    trong học tập và nghiên cứu
+                    trong học tập và nghiên cứu.
                   </li>
                 </ol>
                 <Call />
