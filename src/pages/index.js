@@ -476,15 +476,7 @@ const Home = () => {
                         alt="Screenshot Website doanh nghiệp Ngoc Ha Jade River"
                       />
                     </div>
-                    <a
-                      href="http://ngochajaderiver.com/"
-                      className="title"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="Website Ngoc Ha Jade River"
-                    >
-                      Website Ngoc Ha Jade River
-                    </a>
+                    Website Ngoc Ha Jade River
                   </div>
                 </AnimatedDiv>
               </WorkItem>
