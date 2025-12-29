@@ -1,8 +1,8 @@
-/* eslint-disable no-restricted-exports */
+
 import React from 'react';
 import Scroll from 'react-scroll';
-import SectionCourse from '../components/styled/SectionCourse';
-import SectionHeaderWork from '../components/styled/SectionHeaderWork';
+import SectionCourse from '../components/SectionCourse';
+import SectionHeaderWork from '../components/SectionHeaderWork';
 
 const { Element } = Scroll;
 
