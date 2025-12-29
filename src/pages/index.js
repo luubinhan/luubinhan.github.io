@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Scroll from 'react-scroll';
 import StyledBoxTitle from '../components/styled/StyledBoxTitle';
-import StyledWorkGroup from '../components/styled/StyledWorkGroup';
+import * as styledWorkGroupStyles from '../components/StyledWorkGroup.module.scss';
 import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/styled/StyledBlogTitle';
 import SectionBlog from '../components/SectionBlog';
@@ -445,7 +445,7 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <StyledWorkGroup>
+            <div className={styledWorkGroupStyles.styledWorkGroup}>
               <WorkItem column={2} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
@@ -643,7 +643,7 @@ class Home extends React.Component {
                   </div>
                 </AnimatedDiv>
               </WorkItem>
-            </StyledWorkGroup>
+            </div>
           </div>
         </Element>
         <Element name="blogSection">
