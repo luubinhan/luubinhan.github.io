@@ -7,7 +7,7 @@ import StyledWorkGroup from '../components/styled/StyledWorkGroup';
 import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/styled/StyledBlogTitle';
 import SectionBlog from '../components/SectionBlog';
-import SectionWork from '../components/styled/SectionWork';
+import * as sectionWorkStyles from '../components/SectionWork.module.scss';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
 import SectionTestimony from '../components/styled/SectionTestimony';
 import SectionTop from '../components/styled/SectionTop';
@@ -431,7 +431,7 @@ class Home extends React.Component {
           </SectionTestimony>
         </Element>
         <Element name="workSection">
-          <SectionWork>
+          <div className={sectionWorkStyles.sectionWork}>
             <Circle />
             <div className="container">
               <div className="row">
@@ -644,7 +644,7 @@ class Home extends React.Component {
                 </AnimatedDiv>
               </WorkItem>
             </StyledWorkGroup>
-          </SectionWork>
+          </div>
         </Element>
         <Element name="blogSection">
           <SectionBlog>
