@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Scroll from 'react-scroll';
-import StyledBoxTitle from '../components/styled/StyledBoxTitle';
+import StyledBoxTitle from '../components/StyledBoxTitle';
 import styledWorkGroupStyles from '../components/StyledWorkGroup.module.scss';
 import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/StyledBlogTitle';
