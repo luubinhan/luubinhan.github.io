@@ -65,13 +65,6 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    Events.scrollEvent.register('begin', function () {
-      console.log('begin', arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log('end', arguments);
-    });
     const { appearIn } = this.state;
     const testimonySection = document.querySelector('#testimonyId');
     window && window.addEventListener('scroll', () => {
