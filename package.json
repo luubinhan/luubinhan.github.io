@@ -25,14 +25,11 @@
     "gatsby-plugin-react-helmet": "^6.13.0",
     "gatsby-plugin-sass": "^6.13.0",
     "gatsby-source-filesystem": "^5.13.0",
-    "gatsby-transformer-json": "^5.13.0",
-    "gatsby-transformer-remark": "^6.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.7.11",
-    "sass": "^1.32.0",
-    "styled-components": "^6.1.19"
+    "sass": "^1.32.0"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
