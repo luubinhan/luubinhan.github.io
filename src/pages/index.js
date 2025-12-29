@@ -1,8 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 import Scroll from 'react-scroll';
 import StyledBoxTitle from '../components/StyledBoxTitle';
+import BlogInner from '../components/BlogInner';
+import Circle from '../components/Circle';
+import SectionTestimonyInner from '../components/SectionTestimonyInner';
 import styledWorkGroupStyles from '../components/StyledWorkGroup.module.scss';
 import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/StyledBlogTitle';
@@ -11,7 +13,7 @@ import sectionWorkStyles from '../components/SectionWork.module.scss';
 import SectionHeaderWork from '../components/SectionHeaderWork';
 import SectionTestimony from '../components/SectionTestimony';
 import SectionTop from '../components/SectionTop';
-import SectionCourse from '../components/styled/SectionCourse';
+import SectionCourse from '../components/SectionCourse';
 import Footer from '../components/Footer';
 import logoMobile from '../images/logo-mobile.svg';
 import Call from '../components/Call';
@@ -28,36 +30,6 @@ const {
   scroll,
   scrollSpy,
 } = Scroll;
-
-const BlogInner = styled.div`
-  grid-row: 1 / auto;
-  grid-column: 7 / span 8;
-  @media (max-width: 575px) {
-    grid-column: 4 / span 12;
-  }
-`;
-
-
-const Circle = styled.div`
-  content: "";
-  height: 9.375vw;
-  left: 9.6vw;
-  position: absolute;
-  top: calc(16rem - 2vw);
-  width: 9.375vw;
-  background: url("/circle.svg") center top / contain no-repeat rgb(32, 34, 48);
-`;
-
-const SectionTestimonyInner = styled.div`
-  background: #fbfaf9;
-  color: #686868;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  @media (max-width: 767px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-`;
 
 class Home extends React.Component {
   state = {

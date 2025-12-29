@@ -1,0 +1,8 @@
+.blogInner {
+  grid-row: 1 / auto;
+  grid-column: 7 / span 8;
+  
+  @media (max-width: 575px) {
+    grid-column: 4 / span 12;
+  }
+}

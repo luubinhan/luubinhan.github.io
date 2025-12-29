@@ -1,0 +1,9 @@
+.circle {
+  content: "";
+  height: 9.375vw;
+  left: 9.6vw;
+  position: absolute;
+  top: calc(16rem - 2vw);
+  width: 9.375vw;
+  background: url("/circle.svg") center top / contain no-repeat rgb(32, 34, 48);
+}
