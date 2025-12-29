@@ -112,7 +112,7 @@ const Home = () => {
                     smooth
                     duration={500}
                   >
-                    Sản phẩm đã thực hiện
+                    Các sản phẩm đã tham gia
                   </Link>
                 </li>
                 <li style={{ display: 'none' }}>
@@ -406,9 +406,9 @@ const Home = () => {
               <div className="row">
                 <div className="col-8 col-sm-6 col-md-6 offset-2 offset-sm-4 offset-md-3">
                   <SectionHeaderWork>
-                    <h2 className="display-3">Sản phẩm đã thực hiện</h2>
+                    <h2 className="display-3">Các sản phẩm đã tham gia</h2>
                     <p className="lead">
-                      Website, landing page đã thiết kế, hoàn thiện
+                      Thiết kế và triển khai website, landing page
                     </p>
                   </SectionHeaderWork>
                 </div>
