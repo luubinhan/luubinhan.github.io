@@ -1,110 +1,139 @@
-# AI Coding Agent Instructions
+# Copilot Instructions for luubinhan.github.io
 
 ## Project Overview
-This is a **Gatsby v2** personal portfolio and landing page built with React 16, styled-components, and Bootstrap 4 (SCSS). The site showcases projects, courses, certifications, and links to an external blog.
+This is a Gatsby 5 portfolio website for Luu Binh An (Senior Frontend Developer & Educator). It's a static site showcasing work, courses, and blog content with smooth scroll navigation.
 
-## Architecture & Structure
+## Tech Stack
+- **Framework**: Gatsby 5.13 (React 18.2) + Node 22.14.0
+- **Styling**: SCSS + CSS Modules (migrating from styled-components) + Bootstrap 4.6
+- **Animation**: framer-motion 11.x (with SSR-safe wrapper)
+- **Navigation**: react-scroll for smooth section navigation
 
-### Core Technologies
-- **Gatsby 2.3.31** - Static site generation
-- **React 16.5.1** - UI framework  
-- **styled-components 4.2** - Primary styling for section components
-- **Bootstrap 4 (SCSS)** - Grid system and base styles
-- **react-scroll** - Smooth scrolling navigation
-- **react-reveal** - Scroll-based animations
+## Architecture Patterns
 
-### Project Layout
-```
-src/
-├── components/          # Reusable UI components (Header, Footer, Menu, SEO)
-│   └── styled/         # styled-components definitions (Section*, Styled*)
-├── sections/           # Page sections (course-mfe.jsx)
-├── pages/              # Gatsby pages (index.js - single-page app)
-├── scss/               # Bootstrap imports and component styles
-│   ├── components/     # SCSS modules (_header.scss, _footer.scss, etc.)
-│   └── bootstrap/      # Custom Bootstrap configuration
-├── data/               # JSON/YAML data (features.json, social.yaml)
-└── images/             # SVG logos and image assets
+### Styling Migration in Progress
+The codebase is **actively migrating from styled-components to CSS Modules**:
+
+**CSS Modules Pattern (PREFERRED for new/updated components)**:
+```javascript
+// Import as default, not namespace
+import styles from './ComponentName.module.scss';
+
+// Usage
+<div className={styles.className}>
 ```
 
-## Key Conventions
+**Legacy styled-components** (in `src/components/styled/`):
+- Still used by: SectionTop, SectionTestimony, SectionCourse, SectionHeaderWork, StyledBoxTitle, StyledBlogTitle
+- Being replaced: SectionWork ✓, StyledWorkGroup ✓
 
-### Styling Architecture (Dual System)
-This project uses **two distinct styling approaches**:
+**When converting styled-components to CSS Modules**:
+1. Create `.module.scss` file in `src/components/` (NOT in `styled/` subdirectory)
+2. Use default import: `import styles from './Name.module.scss'`
+3. Replace JSX: `<StyledComponent>` → `<div className={styles.className}>`
+4. Use `:global(.className)` for child elements that receive classes from props
 
-1. **styled-components** (in `src/components/styled/`)
-   - Used for major page sections and large layout components
-   - Naming: `Section*` (e.g., `SectionTop`, `SectionBlog`, `SectionWork`)
-   - Naming: `Styled*` (e.g., `StyledBlogTitle`, `StyledWorkItem`)
-   - Example: [src/components/styled/StyledBlogTitle.js](src/components/styled/StyledBlogTitle.js)
-   
-2. **SCSS modules** (in `src/scss/components/`)
-   - Used for traditional components (header, footer, navigation)
-   - Naming: `_component-name.scss` (e.g., `_header.scss`, `_main-menu.scss`)
-   - Imported via [src/scss/style.scss](src/scss/style.scss)
+### CSS Module Examples
+```scss
+// WorkItem.module.scss - Dynamic classes
+.workItem { /* base styles */ }
+.column1 { grid-column: 1 / span 4; }
+.column7 { grid-column: 7 / span 4; }
+.colorGreen::after { background: #C9DC08; }
+.colorBlue::after { background: #00A5B4; }
 
-**When to use which:**
-- Use styled-components for new section-level components or dynamic styles
-- Use SCSS for traditional UI components that follow Bootstrap patterns
-- Both systems coexist; check similar components before choosing
+// Accessing child elements with external classes
+.workItem :global(.title) {
+  color: #fff;
+}
+```
 
-### Single-Page Application Pattern
-The main page ([src/pages/index.js](src/pages/index.js)) is a single-page application with:
-- **react-scroll** `<Element>` and `<Link>` components for scroll navigation
-- Menu items link to named scroll targets (e.g., `to="workSection"`)
-- All content sections defined inline in one 665-line file
-- Separate section components in `src/sections/` (e.g., `course-mfe.jsx`) imported and used
+```javascript
+// WorkItem.js - Computing class names
+const columnClass = styles[`column${column}`] || '';
+const colorClass = color === '#C9DC08' ? styles.colorGreen : styles.colorBlue;
+<div className={`${styles.workItem} ${columnClass} ${colorClass}`}>
+```
 
-### Component Patterns
-- **Class components** for stateful logic (see [src/components/Header.js](src/components/Header.js))
-- **Functional components** for presentations (see [src/components/Hello.js](src/components/Hello.js))
-- **SVG animations** using inline SVG with SCSS animations (see `Hello.js` + `Hello.scss`)
+### SSR-Safe Animation Wrapper
+Framer-motion requires client-side only loading. Use `AnimatedDiv` wrapper:
 
-### Configuration
-- **Site metadata** in [gatsby-config.js](gatsby-config.js) - update menu links, contact info, analytics
-- **Node version locked** to 14.9.0 (see [package.json](package.json) engines field)
-- **Important:** On macOS, use `sass` package instead of `node-sass` (per [README.md](README.md))
+```javascript
+import AnimatedDiv from '../components/AnimatedDiv';
+
+<AnimatedDiv
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+  {/* content */}
+</AnimatedDiv>
+```
+
+**Never** import `motion` directly from `framer-motion` in components.
+
+### Page Structure
+Single-page application with scroll navigation:
+- `src/pages/index.js` - Main landing page (React class component)
+- Uses `react-scroll` Element/Link components for section navigation
+- Sections: topSection, khoa-hoc-html-css-can-ban, testimonySection, workSection, blogSection
 
 ## Development Workflows
 
-### Commands
+### Essential Commands
 ```bash
-npm run develop        # Start dev server (alias: npm run dev, npm start)
-npm run build          # Production build
-npm run build:pp       # Build with path prefix
-npm run deploy         # Build and deploy to GitHub Pages
-npm run clean          # Remove public folder
+npm run dev         # Start development server (gatsby develop)
+npm run build       # Production build
+npm run build:gh    # Clean + build with prefix paths + deploy to gh-pages
+npm run deploy      # Build and deploy to GitHub Pages
 ```
 
-### Deploy Process
-Uses **gh-pages** package for GitHub Pages deployment:
-- `npm run deploy` - Builds with `--prefix-paths` and deploys to `gh-pages` branch
-- External blog hosted separately at https://luubinhan.github.io/blog/
+### Gatsby Configuration Notes
+- **SCSS Modules**: Configured in `gatsby-config.js` with `cssLoaderOptions.esModule: false` and `namedExport: false`
+- **Offline plugin disabled**: Incompatible with Node 18+
+- **ESLint disabled**: Removed via `gatsby-node.js` webpack config override
+- **Sass deprecation warnings**: Silenced for `slash-div`, `abs-percent`, `if-function`, `lighten`, `map-merge`
 
-### Bootstrap Customization
-Most Bootstrap modules are **commented out** in [src/scss/style.scss](src/scss/style.scss) to reduce bundle size. Only essential modules loaded:
-- Grid system, reboot, type, tables, utilities
-- Enable additional modules as needed by uncommenting imports
+### SCSS Organization
+```
+src/scss/
+├── style.scss              # Main entry (imported in pages)
+├── _bootstrap-variables.scss
+├── bootstrap/              # Customized Bootstrap partials
+├── components/             # Component-specific styles
+├── libraries/              # Third-party overrides
+└── pages/                  # Page-specific styles
+```
 
-## Data Flow
-- **Static JSON** data in `src/data/` loaded via `gatsby-transformer-json`
-- **Gatsby GraphQL** for querying data sources (features, social links)
-- **Site metadata** accessed via GraphQL in components
+**Note**: Use `sass` package, NOT `node-sass` (especially on macOS)
 
-## Code Quality
-- **ESLint** configured with Airbnb config (see [package.json](package.json) devDependencies)
-- **Prettier** integrated for code formatting
+## Common Patterns
 
-## Common Tasks
+### Grid Layout System
+WorkItem uses 16-column grid (defined in StyledWorkGroup):
+- Columns span via `column` prop (1-16)
+- Colors: `#C9DC08` (green) or `#00A5B4` (blue)
 
-### Adding a new section
-1. Create styled-component in `src/components/styled/SectionNewSection.js`
-2. Import in [src/pages/index.js](src/pages/index.js)
-3. Wrap in `<Element name="newSection">` for scroll navigation
-4. Add menu link with `<Link to="newSection">`
+### React Class Components
+Main pages use class components with lifecycle methods:
+- `componentDidMount`: Setup scroll listeners, scrollSpy
+- `componentWillUnmount`: Cleanup event listeners
+- State management for animations (e.g., `appearIn` state)
 
-### Updating navigation
-Edit `menuLinks` array in [gatsby-config.js](gatsby-config.js) siteMetadata or modify inline menu in [src/pages/index.js](src/pages/index.js)
+### Image Assets
+- Source: `static/images/*.avif` (AVIF format for optimization)
+- Public path: `/images/` (served from static folder)
+- SVG assets: `/dot.svg`, `/circle.svg` (in public root)
 
-### Adding images
-Place in `static/images/` or `src/images/` - static assets served directly, src images processed by Gatsby
+## Key Conventions
+1. **CSS Modules**: Always use default import, never `import * as`
+2. **Component Location**: New components → `src/components/`, NOT in `styled/` subdirectory
+3. **Animations**: Use `AnimatedDiv` wrapper, never direct framer-motion imports
+4. **Class Names**: Use camelCase for CSS module classes (`.sectionWork`, not `.section-work`)
+5. **Bootstrap**: Only grid, type, and reboot modules imported (minimal footprint)
+
+## Integration Points
+- **Google Analytics**: Via `gatsby-plugin-google-gtag` (tracking ID from env: `NETLIFY_GOOGLE_ANALYTICS_ID`)
+- **Deployment**: GitHub Pages via `gh-pages` package
+- **External Blog**: Links to `https://luubinhan.github.io/blog/` (separate site)
