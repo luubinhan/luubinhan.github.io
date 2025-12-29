@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import Scroll from 'react-scroll';
 import StyledBoxTitle from '../components/StyledBoxTitle';
@@ -27,41 +27,38 @@ const {
   Link,
   Element,
   Events,
-  scroll,
   scrollSpy,
 } = Scroll;
 
-class Home extends React.Component {
-  state = {
-    appearIn: false,
-  }
+const Home = () => {
+  const [appearIn, setAppearIn] = useState(false);
 
-  componentDidMount() {
-    const { appearIn } = this.state;
+  useEffect(() => {
     const testimonySection = document.querySelector('#testimonyId');
-    window && window.addEventListener('scroll', () => {
-      if (isInViewport(testimonySection) && appearIn === false) {
-        this.setState({ appearIn: true });
+    
+    const handleScroll = () => {
+      if (testimonySection && isInViewport(testimonySection) && !appearIn) {
+        setAppearIn(true);
       }
-    }, false);
+    };
+
+    if (window) {
+      window.addEventListener('scroll', handleScroll, false);
+    }
 
     scrollSpy.update();
-  }
 
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-    window && window.removeEventListener('scroll');
-  }
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+      if (window) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [appearIn]);
 
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  }
-
-  render() {
-    const { appearIn } = this.state;
-    return (
-      <div className="page-home">
+  return (
+    <div className="page-home">
         <Helmet>
           <title>Luu Binh An - Senior Frontend Developer & Educator</title>
           <link rel="icon" type="image/png" href="/favicon.png" />
@@ -716,7 +713,6 @@ class Home extends React.Component {
         <Footer />
       </div>
     );
-  }
-}
+  };
 
 export default Home;
