@@ -8,7 +8,7 @@ import WorkItem from '../components/WorkItem';
 import StyledBlogTitle from '../components/StyledBlogTitle';
 import SectionBlog from '../components/SectionBlog';
 import sectionWorkStyles from '../components/SectionWork.module.scss';
-import SectionHeaderWork from '../components/styled/SectionHeaderWork';
+import SectionHeaderWork from '../components/SectionHeaderWork';
 import SectionTestimony from '../components/styled/SectionTestimony';
 import SectionTop from '../components/styled/SectionTop';
 import SectionCourse from '../components/styled/SectionCourse';
