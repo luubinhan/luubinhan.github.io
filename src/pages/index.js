@@ -5,7 +5,7 @@ import Scroll from 'react-scroll';
 import StyledBoxTitle from '../components/styled/StyledBoxTitle';
 import styledWorkGroupStyles from '../components/StyledWorkGroup.module.scss';
 import WorkItem from '../components/WorkItem';
-import StyledBlogTitle from '../components/styled/StyledBlogTitle';
+import StyledBlogTitle from '../components/StyledBlogTitle';
 import SectionBlog from '../components/SectionBlog';
 import sectionWorkStyles from '../components/SectionWork.module.scss';
 import SectionHeaderWork from '../components/styled/SectionHeaderWork';
