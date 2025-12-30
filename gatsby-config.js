@@ -35,7 +35,7 @@ module.exports = {
           includePaths: [
             `${__dirname}/node_modules`,
           ],
-          silenceDeprecations: ['slash-div', 'abs-percent', 'if-function', 'color-functions', 'map-merge'],
+          silenceDeprecations: ['slash-div', 'abs-percent', 'if-function', 'color-functions', 'map-merge', 'import', 'global-builtin'],
         },
       },
     },

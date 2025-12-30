@@ -1,4 +1,5 @@
 @use 'sass:color';
+@use 'sass:map';
 
 // Grid breakpoints
 // $grid-breakpoints: (
@@ -46,7 +47,7 @@ $headings-font-weight: 400;
 
 $spacer: 1rem;
 $spacers: ();
-$spacers: map-merge(
+$spacers: map.merge(
   (
     0: 0,
     1: 10px,
