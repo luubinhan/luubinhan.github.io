@@ -1,5 +1,9 @@
 .sectionCourse {
   position: relative;
+
+  @media (max-width: 780px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .sectionCourse::after {

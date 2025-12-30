@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // Grid breakpoints
 // $grid-breakpoints: (
 //         xs: 0,
@@ -25,7 +27,7 @@ $dark: #202230;
 // Links
 $link-color: $primary;
 $link-decoration: none;
-$link-hover-color: lighten($primary, 20%);
+$link-hover-color: color.adjust($primary, $lightness: 20%);
 $link-hover-decoration: underline;
 
 // Fonts

@@ -23,6 +23,8 @@ import CourseMfe from '../sections/course-mfe';
 import AnimatedDiv from '../components/AnimatedDiv';
 import '../scss/style.scss';
 
+import styles from './index.module.scss';
+
 const {
   Link,
   Element,
@@ -101,7 +103,17 @@ const Home = () => {
                     smooth
                     duration={500}
                   >
-                    Khóa học HTML/CSS
+                    Khóa học
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="du-an-ca-nhan"
+                    spy
+                    smooth
+                    duration={500}
+                  >
+                    Dự án cá nhân
                   </Link>
                 </li>
                 <li>
@@ -314,6 +326,80 @@ const Home = () => {
           </div>
         </Element>
         <CourseMfe />
+        <Element name="du-an-ca-nhan">
+          <SectionTestimony>
+            <SectionTestimonyInner>
+              <div
+                className="container"
+                style={{ position: 'relative' }}
+              >
+                <StyledBoxTitle>Dự án <br/> cá nhân</StyledBoxTitle>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-sm-7 col-md-7">
+                      <div className={styles.personalProjects}>
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/behavior-style.webp" alt="Assessing your Behavioural Style"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                                Behavioural Style
+                              </a>
+                            </div>
+                          </div>
+                        </AnimatedDiv>    
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6, delay: 0.4 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://github.com/luubinhan/RudderStackTracker" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/RudderStackTracker.webp" alt="RudderStackTracker"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://github.com/luubinhan/RudderStackTracker" rel="noopener noreferrer" target="_blank">
+                                Rudder Stack Tracker
+                              </a>
+                            </div>
+                          </div>
+                        </AnimatedDiv>    
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6, delay: 0.8 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/DevProxy.webp" alt="Assessing your Behavioural Style"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                                Dev Proxy
+                              </a>
+                            </div>
+                          </div>
+                        </AnimatedDiv>    
+                      </div>                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SectionTestimonyInner>
+          </SectionTestimony>
+        </Element>
         <Element name="testimonySection">
           <SectionTestimony style={{ display: 'none' }}>
             <SectionTestimonyInner>
