@@ -3,12 +3,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 3rem;
+
+    @media (max-width: 575px) {
+        margin-left: 0;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        gap: 1rem;
+    }
 }
 
 .personalProjectContent {
+    --border-radius: 30px;
     margin-bottom: 0.5rem;
     position: relative;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
 
     &:before {
         content: "";
@@ -18,12 +25,12 @@ top: 0;
         bottom: 0;
         left: 0;
         z-index: 1;
-        border-radius: 20px;
-        background: linear-gradient(135deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .2) 45%, rgba(255, 255, 255, 0) 46%);
+        border-radius: var(--border-radius);
+        background: linear-gradient(135deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 51%);
     }
 
     img {
-        border-radius: 20px;
+        border-radius: var(--border-radius);
         border: 1px solid rgba(255, 255, 255, .1);
     }
 }

@@ -4,6 +4,10 @@
   @media (max-width: 780px) {
     margin-bottom: 4rem;
   }
+
+  @media (max-width: 575px) {
+    margin-bottom: 0;
+  }
 }
 
 .sectionCourse::after {

@@ -3,13 +3,17 @@
   padding-right: 20%;
   position: relative;
   min-height: 50vh;
-}
 
-@media (max-width: 991px) {
-  .sectionTestimony {
+  @media (max-width: 991px) {
     min-height: 0;
   }
+
+  @media (max-width: 575px) {
+    margin-top: 5rem;
+  }
 }
+
+
 
 .sectionTestimony::after {
   content: "";

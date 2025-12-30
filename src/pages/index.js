@@ -90,7 +90,7 @@ const Home = () => {
                 smooth
                 duration={500}
               >
-                <img height="30" alt="Luckyluu Homepage" src={logoMobile} />
+                <img height="60" alt="Luckyluu Homepage" src={logoMobile} />
               </Link>
             </div>
             <div id="main-menu" className="main-menu">
@@ -150,7 +150,7 @@ const Home = () => {
                     Blog
                   </Link>
                 </li>
-                <li className="contact-nav">
+                {/* <li className="contact-nav">
                   <Link
                     activeClass="active"
                     to="topSection"
@@ -160,7 +160,7 @@ const Home = () => {
                   >
                     LIÊN HỆ
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
