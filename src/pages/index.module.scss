@@ -17,16 +17,25 @@
     position: relative;
     border-radius: var(--border-radius);
 
-    &:before {
-        content: "";
-position: absolute;
-top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    
+
+    a {
+        display: block;
+        cursor: pointer;
+        position: relative;
         z-index: 1;
-        border-radius: var(--border-radius);
-        background: linear-gradient(135deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 51%);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            border-radius: var(--border-radius);
+            background: linear-gradient(135deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 51%);
+        }
     }
 
     img {

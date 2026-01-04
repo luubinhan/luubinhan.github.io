@@ -382,12 +382,30 @@ const Home = () => {
                           <div className={styles.personalProject}>
                             <div className={styles.personalProjectContent}>
                               <a href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
-                                <img src="/images/DevProxy.webp" alt="Assessing your Behavioural Style"  />
+                                <img src="/images/DevProxy.webp" alt="Dev Proxy"  />
                               </a>
                             </div>
                             <div className={styles.personalProjectMeta}>
                               <a className={styles.personalProjectLink} href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
                                 Dev Proxy
+                              </a>
+                            </div>
+                          </div>
+                        </AnimatedDiv>    
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6, delay: 1 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://luubinhan.github.io/dev-quiz-master/" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/dev-quiz.webp" alt="Dev Quiz Master"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/dev-quiz-master/" rel="noopener noreferrer" target="_blank">
+                                Dev Quiz
                               </a>
                             </div>
                           </div>
