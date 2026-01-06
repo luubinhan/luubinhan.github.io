@@ -381,12 +381,12 @@ const Home = () => {
                         >
                           <div className={styles.personalProject}>
                             <div className={styles.personalProjectContent}>
-                              <a href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                              <a href="https://github.com/luubinhan/dev-proxy" rel="noopener noreferrer" target="_blank">
                                 <img src="/images/DevProxy.webp" alt="Dev Proxy"  />
                               </a>
                             </div>
                             <div className={styles.personalProjectMeta}>
-                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/behavior-style/" rel="noopener noreferrer" target="_blank">
+                              <a className={styles.personalProjectLink} href="https://github.com/luubinhan/dev-proxy" rel="noopener noreferrer" target="_blank">
                                 Dev Proxy
                               </a>
                             </div>
@@ -406,6 +406,24 @@ const Home = () => {
                             <div className={styles.personalProjectMeta}>
                               <a className={styles.personalProjectLink} href="https://luubinhan.github.io/dev-quiz-master/" rel="noopener noreferrer" target="_blank">
                                 Dev Quiz
+                              </a>
+                            </div>
+                          </div>
+                        </AnimatedDiv>    
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6, delay: 1.2 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://luubinhan.github.io/jumi-math/" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/toan-hoc-nhi.webp" alt="Toán Học Nhí"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/jumi-math/" rel="noopener noreferrer" target="_blank">
+                                Toán Học Nhí
                               </a>
                             </div>
                           </div>
