@@ -34,7 +34,7 @@
     "sass": "^1.32.0"
   },
   "devDependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "^8.18.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-plugin-import": "^2.29.0",
