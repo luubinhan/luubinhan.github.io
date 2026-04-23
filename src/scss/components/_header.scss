@@ -1,0 +1,19 @@
+.header {
+  height: 120px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-social {
+    height: inherit;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+}
