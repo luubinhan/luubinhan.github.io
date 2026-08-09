@@ -627,7 +627,7 @@ const Home = () => {
               </div>
             </div>
             <div className={styledWorkGroupStyles.styledWorkGroup}>
-              <WorkItem column={2} color="#C9DC08">
+              {/* <WorkItem column={2} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -653,7 +653,7 @@ const Home = () => {
                     </a>
                   </div>
                 </AnimatedDiv>
-              </WorkItem>
+              </WorkItem> */}
               <WorkItem column={7} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
@@ -759,7 +759,7 @@ const Home = () => {
                   </div>
                 </AnimatedDiv>
               </WorkItem>
-              <WorkItem column={2} color="#C9DC08">
+              {/* <WorkItem column={2} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -777,8 +777,8 @@ const Home = () => {
                     Website Bellow Drill-inc
                   </div>
                 </AnimatedDiv>
-              </WorkItem>
-              <WorkItem column={7} color="#00A5B4">
+              </WorkItem> */}
+              {/* <WorkItem column={7} color="#00A5B4">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -796,7 +796,7 @@ const Home = () => {
                     Website Tipit.vn
                   </div>
                 </AnimatedDiv>
-              </WorkItem>
+              </WorkItem> */}
               <WorkItem column={12} color="#C9DC08">
                 <AnimatedDiv
                   initial={{ opacity: 0, y: 20 }}
