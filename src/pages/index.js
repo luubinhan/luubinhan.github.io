@@ -481,6 +481,24 @@ const Home = () => {
                               </a>
                             </div>
                           </div>
+                        </AnimatedDiv>
+                        <AnimatedDiv
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={appearIn ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                          transition={{ duration: 0.6, delay: 2 }}
+                        >
+                          <div className={styles.personalProject}>
+                            <div className={styles.personalProjectContent}>
+                              <a href="https://luubinhan.github.io/mini-pen/" rel="noopener noreferrer" target="_blank">
+                                <img src="/images/mini-pen.png" alt="Mini Pen - By Luu Binh An"  />
+                              </a>
+                            </div>
+                            <div className={styles.personalProjectMeta}>
+                              <a className={styles.personalProjectLink} href="https://luubinhan.github.io/mini-pen/" rel="noopener noreferrer" target="_blank">
+                              Mini Pen
+                              </a>
+                            </div>
+                          </div>
                         </AnimatedDiv>    
                       </div>                  
                     </div>
